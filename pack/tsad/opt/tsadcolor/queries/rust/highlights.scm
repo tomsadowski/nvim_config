@@ -482,6 +482,10 @@ return_type: (generic_type
     (reference_type
       type: (type_identifier) @type.parameter)))
 
+type_arguments: (type_arguments
+  (reference_type
+    type: (primitive_type) @type.parameter))
+
 (generic_type 
   type: (type_identifier) 
   type_arguments: (type_arguments 
