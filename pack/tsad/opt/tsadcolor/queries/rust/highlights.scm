@@ -443,15 +443,17 @@
   type: (identifier) @type
         (identifier) @variable.parameter)
 
-(function_item 
-  return_type: (generic_type)     @normal)
-
-
-(function_item 
-  return_type: (type_identifier)  @normal)
-
-(function_item 
-  return_type: (primitive_type)   @normal)
+;(function_item 
+;  return_type: (generic_type) @normal)
+; (function_item 
+;   return_type: (type_identifier)  @normal)
+; (function_item 
+;   return_type: (primitive_type)   @normal)
+;return_type: (primitive_type) @type.parameter
+;return_type: (type_identifier) @type.parameter
+return_type: (generic_type) @normal
+type_arguments: (type_arguments (primitive_type) @type.parameter) 
+type_arguments: (type_arguments (type_identifier) @type.parameter) 
 
 (tuple_struct_pattern 
   type: (identifier) @type)
@@ -464,6 +466,7 @@
 
 
 ((identifier) @type (#any-of? @type "Some" "None" "Ok" "Err"))
+
 
 return_type: (generic_type 
   type: (scoped_type_identifier) @normal (#set! priority 105)
@@ -497,6 +500,9 @@ type_arguments: (type_arguments
 (type_arguments 
   (tuple_type
     (type_identifier) @type.parameter))
+(type_arguments 
+  (tuple_type
+    (primitive_type) @type.parameter))
 
 type: (generic_type
   type: (type_identifier)
