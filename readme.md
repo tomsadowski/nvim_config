@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### gold
+![gold](pics/gold.png)
+
 ### fire
 ![fire](pics/fire.png)
 
