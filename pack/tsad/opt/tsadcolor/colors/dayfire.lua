@@ -14,10 +14,11 @@ local p2 = vim.deepcopy(c.palette)
   p.dyellow.g  = "#203018"
   p.dcyan.g    = "#103040"
 
-  p.red.g      = "#ff6880"
+  p.red.g      = "#ff6060"
   p.yellow.g   = "#c0b050"
   p.cyan.g     = "#88b8ff"
-  p.magenta.g  = "#c888ff"
+  --p.magenta.g  = "#c888ff"
+  p.magenta.g  = "#c878ff"
 
 c.apply {
   canvas     = p.black, 
