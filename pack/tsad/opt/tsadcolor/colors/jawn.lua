@@ -1,4 +1,4 @@
--- gold
+-- jawn
 
 require "treesitter"
 local c = require "color"
@@ -15,8 +15,8 @@ local p2 = vim.deepcopy(c.palette)
   p.dcyan.g    = "#203850"
 
   p.red.g      = "#e87440"
-  p.yellow.g   = "#a0b040"
-  p.cyan.g     = "#98b8ff"
+  p.yellow.g   = "#b0b040"
+  p.cyan.g     = "#90bcff"
   p.magenta.g  = "#e878e8"
 
 c.apply {
