@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### spring
+![spring](pics/spring.png)
+
 ### gold
 ![gold](pics/gold.png)
 
