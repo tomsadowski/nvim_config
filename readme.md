@@ -11,12 +11,3 @@
 
 ### spring
 ![spring](pics/spring.png)
-
-### gold
-![gold](pics/gold.png)
-
-### fire
-![fire](pics/fire.png)
-
-### sunshower
-![sunshower](pics/sunshower.png)
