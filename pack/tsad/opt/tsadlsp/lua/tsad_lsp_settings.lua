@@ -36,20 +36,20 @@ vim.api.nvim_create_autocmd(
     }
 )
 vim.api.nvim_create_autocmd(
-    'FileType', {
-        pattern  = 'rust',
-        callback = function(args) 
-            vim.lsp.start({
-                    name = 'rust-lsp',
-                    cmd = {'rust-analyzer'},
-                    root_dir = vim.fs.root(
-                        args.buf, 
-                        {'Cargo.toml'}
-                    )
-                }
+  'FileType', {
+    pattern  = 'rust',
+    callback = function(args) 
+      vim.lsp.start({
+            name = 'rust-lsp',
+            cmd = {'rust-analyzer'},
+            root_dir = vim.fs.root(
+              args.buf, 
+              {'Cargo.toml'}
             )
-        end
-    }
+          }
+        )
+    end
+  }
 )
 vim.api.nvim_create_autocmd(
     {'BufEnter', 'BufWinEnter'}, {

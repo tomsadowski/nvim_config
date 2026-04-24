@@ -1,4 +1,4 @@
--- spring
+-- fire
 
 require "treesitter"
 local c = require "color"
@@ -14,10 +14,10 @@ local p2 = vim.deepcopy(c.palette)
   p.dyellow.g  = "#3c3a20"
   p.dcyan.g    = "#203850"
 
-  p.red.g      = "#e88440"
-  p.yellow.g   = "#b0c030"
-  p.cyan.g     = "#a0c8ff"
-  p.magenta.g  = "#d880c8"
+  p.red.g      = "#e87058"
+  p.yellow.g   = "#d0b840"
+  p.cyan.g     = "#90c8d8"
+  p.magenta.g  = "#c88cd8"
 
 c.apply {
   canvas     = p.black, 
