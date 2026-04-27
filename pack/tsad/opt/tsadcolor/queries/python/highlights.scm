@@ -5,9 +5,6 @@
   object: (identifier) @normal
   attribute: (identifier))
 
-function: (attribute
-  object: (identifier) @variable
-  attribute: (identifier))
 
 
 ;((identifier) @constructor
@@ -16,9 +13,6 @@ function: (attribute
 ((identifier) @constant
  (#match? @constant "^[A-Z][A-Z_]*$"))
 
-(subscript 
-  value: (identifier)
-  subscript: (identifier) @param (#set! priority 105))
 
 (argument_list
   (identifier) @param (#set! priority 105))
@@ -153,3 +147,37 @@ function: (attribute
   "match"
   "case"
 ] @keyword
+
+(subscript 
+  value: (identifier)
+  subscript: (identifier) @param (#set! priority 105))
+
+(subscript
+  value: (attribute
+    object: (attribute
+      object: (identifier)
+      attribute: (identifier)) @normal; (#set! priority 105)
+    attribute: (identifier))
+ subscript: (attribute
+   object: (identifier)
+   attribute: (identifier)))
+
+(attribute
+  object: (attribute
+    object: (identifier) 
+    attribute: (identifier) @normal ;(#set! priority 105)
+    ))
+
+(call ; [168, 24] - [168, 51]
+  function: (attribute ; [168, 24] - [168, 49]
+    object: (attribute ; [168, 24] - [168, 42]
+      object: (identifier) ; [168, 24] - [168, 28]
+      attribute: (identifier) @variable (#set! priority 105))
+    attribute: (identifier)) ; [168, 43] - [168, 49]
+  arguments: (argument_list)) ; [168, 49] - [168, 51]
+
+(call ; [168, 24] - [168, 51]
+  function: (attribute ; [168, 24] - [168, 49]
+    object: (identifier) @variable) ; [168, 24] - [168, 28]
+  arguments: (argument_list)) ; [168, 49] - [168, 51]
+
