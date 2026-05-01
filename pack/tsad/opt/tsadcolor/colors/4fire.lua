@@ -8,14 +8,14 @@ local p2 = vim.deepcopy(c.palette)
   p.black.g    = "#181c20"
   p.dgrey.g    = "#404850"
   p.grey.g     = "#606c70"
-  p.white.g    = "#d8d8d0"
+  p.white.g    = "#d0d0c8"
 
   p.dblue.g    = "#252a30"
   p.dyellow.g  = "#3c3a20"
   p.dcyan.g    = "#203850"
 
-  p.red.g      = "#d06048"
-  p.yellow.g   = "#b8b048"
+  p.red.g      = "#e06850"
+  p.yellow.g   = "#b8b040"
   p.cyan.g     = "#78c4e0"
   p.magenta.g  = "#c082f0"
 
