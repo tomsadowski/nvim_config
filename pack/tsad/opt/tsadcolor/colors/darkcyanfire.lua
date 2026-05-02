@@ -1,23 +1,23 @@
--- cute
+-- 2fire
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 local p2 = vim.deepcopy(c.palette)
 
-  p.black.g    = "#202428"
+  p.black.g    = "#101418"
   p.dgrey.g    = "#555a60"
   p.grey.g     = "#757a80"
-  p.white.g    = "#c8c4c0"
+  p.white.g    = "#d8d0c8"
 
   p.dblue.g    = "#252a30"
   p.dyellow.g  = "#3c3a20"
   p.dcyan.g    = "#203850"
 
-  p.red.g      = "#f06058"
-  p.yellow.g   = "#b8a858"
-  p.cyan.g     = "#80c4a4"
-  p.magenta.g  = "#90a0e0"
+  p.red.g      = "#e06058"
+  p.yellow.g   = "#b8a040"
+  p.cyan.g     = "#70b0b8"
+  p.magenta.g  = "#b886d8"
 
 c.apply {
   canvas     = p.black, 
