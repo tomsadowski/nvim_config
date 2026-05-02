@@ -1,4 +1,4 @@
--- cute
+-- day
 
 require "treesitter"
 local c = require "color"
@@ -12,25 +12,27 @@ local p2 = vim.deepcopy(c.palette)
 
   p.dblue.g    = "#252a30"
   p.dyellow.g  = "#3c3a20"
-  p.dcyan.g    = "#203850"
+  p.dgreen.g   = "#203850"
 
   p.red.g      = "#e07068"
-  p.yellow.g   = "#d0b858"
-  p.cyan.g     = "#70d0b4"
-  p.magenta.g  = "#90b0e0"
+  p.yellow.g   = "#c0b058"
+  p.green.g    = "#78c0b0"
+  p.cyan.g     = "#8088b4"
+  p.magenta.g  = "#d090c0"
 
 c.apply {
   canvas     = p.black, 
 
-  search     = p.dcyan, 
+  search     = p.dgreen, 
   visual     = p.dyellow, 
   diagund    = p.dblue,
 
   lineno     = p.dgrey, 
   signcol    = p.dgrey, 
   msgarea    = p.grey, 
-  comment    = p.grey, 
   typeparam  = p.magenta,
+
+  comment    = p.cyan, 
 
   normal     = p.white, 
   curlineno  = p.grey, 
@@ -40,8 +42,8 @@ c.apply {
   type       = p.yellow, 
   func       = p.yellow, 
 
-  variable   = p.cyan, 
-  btype      = p.cyan, 
+  variable   = p.green, 
+  btype      = p.green, 
 
   keyword    = p.red,
 
