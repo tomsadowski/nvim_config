@@ -7,7 +7,7 @@ local p2 = vim.deepcopy(c.palette)
 
   p.black.g    = "#232a30"
   p.dgrey.g    = "#586070"
-  p.dmagenta.g = "#707890"
+  p.dmagenta.g = "#a090d0"
   p.grey.g     = "#808080"
 
   p.white.g    = "#a0a090"
