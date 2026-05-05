@@ -8,6 +8,7 @@ local p2 = vim.deepcopy(c.palette)
   p.black.g    = "#222728"
   p.dgrey.g    = "#506060"
   p.grey.g     = "#808c8c"
+  p.dmagenta.g = "#8c809c"
 
   p.red.g      = "#e09060"
   p.white.g    = "#b8b0a0"
@@ -29,7 +30,7 @@ c.apply {
   lineno     = p.dgrey, 
   signcol    = p.dgrey, 
   msgarea    = p.grey, 
-  comment    = p.grey, 
+  comment    = p.dmagenta, 
   curlineno  = p.grey, 
 
   keyword    = p.red,
