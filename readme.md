@@ -9,11 +9,5 @@
 
 ## Colorschemes
 
-### sandbar
-![sandbar](pics/sandbar.png)
-
-### spring
-![spring](pics/spring.png)
-
-### fire
-![fire](pics/fire.png)
+### moonmoss
+![moonmoss](pics/moonmoss.png)
