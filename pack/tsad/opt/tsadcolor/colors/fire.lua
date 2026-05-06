@@ -33,6 +33,8 @@ c.apply {
   typeparam  = p.magenta,
 
   normal     = p.white, 
+  constant   = p.white, 
+
   curlineno  = p.grey, 
 
   item       = p.yellow, 

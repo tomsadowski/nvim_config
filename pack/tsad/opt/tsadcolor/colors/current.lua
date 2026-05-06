@@ -15,9 +15,10 @@ local p2 = vim.deepcopy(c.palette)
   p.grey.g     = "#808c8c"
   p.dmagenta.g = "#8c809c"
 
-  p.red.g      = "#d89058"
-  p.white.g    = "#b8b0a0"
+  p.white.g    = "#b5b09c"
   p.yellow.g   = "#d8d4b0"
+
+  p.red.g      = "#d89058"
   p.cyan.g     = "#98d0c8"
   p.magenta.g  = "#e090a8"
 
@@ -37,6 +38,7 @@ c.apply {
   keyword    = p.red,
 
   normal     = p.white, 
+  constant   = p.white, 
 
   item       = p.yellow, 
   matchparen = p.yellow, 

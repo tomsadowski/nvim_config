@@ -232,20 +232,20 @@ M.apply = function(p)
     }, 
 
     ['@constant'] = {
-      ctermfg = p.variable.t, 
-      fg      = p.variable.g, 
+      ctermfg = p.constant.t, 
+      fg      = p.constant.g, 
     }, 
     Constant = {
-      ctermfg = p.variable.t, 
-      fg      = p.variable.g, 
+      ctermfg = p.constant.t, 
+      fg      = p.constant.g, 
     }, 
     ['@constant.builtin'] = {
-      ctermfg = p.variable.t, 
-      fg      = p.variable.g, 
+      ctermfg = p.constant.t, 
+      fg      = p.constant.g, 
     }, 
     ['@constant.macro'] = {
-      ctermfg = p.variable.t, 
-      fg      = p.variable.g, 
+      ctermfg = p.constant.t, 
+      fg      = p.constant.g, 
     }, 
 
     ['@number'] = {
