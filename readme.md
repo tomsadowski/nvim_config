@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### sandbar
+![sandbar](pics/sandbar.png)
+
 ### spring
 ![spring](pics/spring.png)
 

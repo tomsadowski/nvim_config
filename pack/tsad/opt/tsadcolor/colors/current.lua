@@ -1,4 +1,4 @@
--- dsandbar
+-- sandbar
 
 require "treesitter"
 local c = require "color"
