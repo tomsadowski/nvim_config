@@ -11,8 +11,8 @@ local p2 = vim.deepcopy(c.palette)
   p.dyellow.g  = "#3c3a20"
   p.dcyan.g    = "#203850"
 
-  p.dgrey.g    = "#506060"
-  p.grey.g     = "#808c8c"
+  p.dgrey.g    = "#505858"
+  p.grey.g     = "#808888"
   p.dmagenta.g = "#a8a4c8"
 
   p.white.g    = "#b2b09a"
