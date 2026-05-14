@@ -542,3 +542,6 @@ type_arguments: (type_arguments
 (use_declaration      
   argument: (scoped_identifier 
     name: (identifier) @type)) (#set! priority 105)
+
+((identifier) @constant
+ (#match? @constant "^[A-Z][A-Z_]*$"))
