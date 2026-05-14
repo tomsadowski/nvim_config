@@ -48,9 +48,9 @@ c.apply {
 
   variable   = p.cyan, 
   btype      = p.cyan, 
+  typeparam  = p.cyan,
 
   constant   = p.magenta, 
-  typeparam  = p.magenta,
   literal    = p.magenta, 
   str        = p.magenta, 
 }

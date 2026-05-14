@@ -20,11 +20,11 @@ c.apply {
   constant   = p.red, 
   literal    = p.red, 
   str        = p.red, 
-  typeparam  = p.red,
   type       = p.black, 
 
-  curlineno  = p.black, 
   normal     = p.dgrey, 
+  typeparam  = p.black,
+  curlineno  = p.black, 
   item       = p.black, 
   matchparen = p.black, 
   func       = p.black, 
