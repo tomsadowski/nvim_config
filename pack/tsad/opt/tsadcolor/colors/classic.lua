@@ -15,7 +15,7 @@ c.apply {
   lineno     = p.grey, 
   msgarea    = p.dgrey, 
 
-  comment    = p.magenta, 
+  comment    = p.dgreen, 
   keyword    = p.blue,
   constant   = p.red, 
   literal    = p.red, 
