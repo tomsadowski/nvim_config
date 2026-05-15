@@ -9,7 +9,7 @@ c.apply {
 
   search     = p.cyan, 
   visual     = p.yellow, 
-  diagund    = p.green,
+  diagund    = p.grey,
 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 

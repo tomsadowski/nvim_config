@@ -5,10 +5,10 @@ local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.grey.g    = "#e0e0e0"
-p.dgreen.g  = "#307000"
-p.magenta.g = "#c000f0"
-p.blue.g    = "#0050e0"
-p.red.g     = "#e02000"
+p.dgreen.g  = "#308000"
+p.magenta.g = "#b000f0"
+p.blue.g    = "#0060f0"
+p.red.g     = "#c02000"
 
 c.apply {
   canvas     = p.white, 
@@ -28,15 +28,15 @@ c.apply {
   variable   = p.blue, 
   typeparam  = p.blue,
 
-  type       = p.dgreen, 
-  item       = p.dgreen, 
-  matchparen = p.dgreen, 
-  func       = p.dgreen, 
-  btype      = p.dgreen, 
+  type       = p.red, 
+  item       = p.red, 
+  matchparen = p.red, 
+  func       = p.red, 
+  btype      = p.red, 
 
-  constant   = p.magenta, 
-  literal    = p.magenta, 
-  str        = p.magenta, 
+  constant   = p.dgreen, 
+  literal    = p.dgreen, 
+  str        = p.dgreen, 
 
-  keyword    = p.red,
+  keyword    = p.magenta,
 }
