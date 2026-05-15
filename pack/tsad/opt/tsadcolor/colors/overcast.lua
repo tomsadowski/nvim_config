@@ -1,15 +1,15 @@
 -- overcast
 
 require "treesitter"
-local c = require "bcolor"
+local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-  p.white.g    = "#dddddd"
+  p.white.g    = "#f0f0f0"
   p.dgrey.g    = "#555555"
   p.grey.g     = "#888888"
-  p.dcyan.g    = "#004080"
+  p.dcyan.g    = "#0040c0"
   p.red.g      = "#a06000"
-  p.dmagenta.g = "#800080"
+  p.dmagenta.g = "#a000a0"
 
 c.apply {
   canvas     = p.white, 
