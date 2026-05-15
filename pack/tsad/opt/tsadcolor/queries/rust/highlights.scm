@@ -200,7 +200,7 @@
   (identifier)  @variable)
 
 (const_item 
-  name: (identifier)  @variable)
+  name: (identifier)  @constant)
 
 (closure_parameters 
   (_) @variable.parameter)
@@ -443,14 +443,6 @@
   type: (identifier) @type
         (identifier) @variable.parameter)
 
-;(function_item 
-;  return_type: (generic_type) @normal)
-; (function_item 
-;   return_type: (type_identifier)  @normal)
-; (function_item 
-;   return_type: (primitive_type)   @normal)
-;return_type: (primitive_type) @type.parameter
-;return_type: (type_identifier) @type.parameter
 return_type: (generic_type) @normal
 type_arguments: (type_arguments (primitive_type) @type.parameter) 
 type_arguments: (type_arguments (type_identifier) @type.parameter) 
@@ -543,5 +535,5 @@ type_arguments: (type_arguments
   argument: (scoped_identifier 
     name: (identifier) @type)) (#set! priority 105)
 
-((identifier) @constant
+name: ((identifier) @constant
  (#match? @constant "^[A-Z][A-Z_]*$"))
