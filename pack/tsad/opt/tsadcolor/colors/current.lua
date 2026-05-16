@@ -5,9 +5,9 @@ local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 c.apply {
-  search     = p.cyan, 
-  visual     = p.yellow, 
-  diagund    = p.green,
+  search     = p.dcyan, 
+  visual     = p.dyellow, 
+  diagund    = p.dgreen,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
