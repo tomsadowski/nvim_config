@@ -21,7 +21,7 @@ local p = vim.deepcopy(c.palette)
 c.apply {
   search     = p.dcyan, 
   visual     = p.dyellow, 
-  diagund    = p.dgreen,
+  diagund    = p.dblue,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
