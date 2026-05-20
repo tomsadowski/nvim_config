@@ -1,4 +1,4 @@
--- light
+-- white
 
 require "treesitter"
 local c = require "color"
