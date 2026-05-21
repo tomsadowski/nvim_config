@@ -13,10 +13,10 @@ local p = vim.deepcopy(c.palette)
   p.dgrey.g    = "#686868"
 
   p.white.g    = "#d0d0d0"
-  p.cyan.g     = "#80d0e0"
-  p.yellow.g   = "#d0c080"
-  p.red.g      = "#f07878"
-  p.magenta.g  = "#d088d0"
+  p.cyan.g     = "#a0c8d8"
+  p.yellow.g   = "#c8c480"
+  p.red.g      = "#e08078"
+  p.magenta.g  = "#c890c8"
 
 c.apply {
   search     = p.dcyan, 

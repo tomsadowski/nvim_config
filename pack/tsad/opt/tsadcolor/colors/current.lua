@@ -1,22 +1,22 @@
--- ldark
+-- dark
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-  p.black.g    = "#2c2c2c"
+  p.black.g    = "#181818"
 
-  p.dblue.g    = "#404040"
-  p.dyellow.g  = "#404020"
-  p.dcyan.g    = "#204040"
+  p.dblue.g    = "#303030"
+  p.dyellow.g  = "#303020"
+  p.dcyan.g    = "#203030"
 
   p.dgrey.g    = "#686868"
 
-  p.white.g    = "#d8d8d8"
-  p.cyan.g     = "#80e0f0"
-  p.yellow.g   = "#d8c888"
-  p.red.g      = "#f08888"
-  p.magenta.g  = "#d098e0"
+  p.white.g    = "#d0d0d0"
+  p.cyan.g     = "#a0c8d8"
+  p.yellow.g   = "#c8c480"
+  p.red.g      = "#e08078"
+  p.magenta.g  = "#c890c8"
 
 c.apply {
   search     = p.dcyan, 
