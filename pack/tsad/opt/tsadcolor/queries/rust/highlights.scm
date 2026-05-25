@@ -141,7 +141,6 @@
 (scoped_identifier path: (identifier) @normal)
 (scoped_identifier name: (identifier) @type)
 
-
 (for_expression      pattern: (identifier) @variable)
 (for_expression        value: (identifier) @variable)
 (for_expression 
@@ -197,10 +196,9 @@
   (ref_pattern 
     (mut_pattern (identifier) @variable.parameter)))
 
-
 (attribute 
   (scoped_identifier 
-    (identifier)       @function.macro .))
+    (identifier) @function.macro .))
 
 (attribute_item 
   (attribute 
@@ -214,7 +212,6 @@
   (attribute 
     (identifier) @normal))
 
-
 (field_expression value: (identifier) @normal)
 
 (generic_function (identifier) @function)
@@ -224,13 +221,10 @@
   function: (field_expression 
     value: (identifier) @variable))
 
-
 (macro_invocation macro: (identifier) @function.macro)
 (macro_invocation
   macro: (scoped_identifier 
     (identifier) @function.macro .))
-
-
 
 path: (scoped_identifier 
   path: (identifier) 
@@ -263,7 +257,6 @@ function: (identifier) @function (#match? @function "^[a-z]")
 (mut_pattern 
   (mutable_specifier)
   (identifier) @variable)
-
 
 (use_list (identifier) @type)
 (use_list 
@@ -362,4 +355,3 @@ function: (identifier) @function (#match? @function "^[a-z]")
 (macro_invocation "!" @function)
 (closure_parameters (_) @variable.parameter)
 (parameter "_" @variable.parameter.builtin)
-
