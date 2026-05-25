@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### rainbow
+![rainbow](pics/rainbow.png)
+
 ### moonmoss
 ![moonmoss](pics/moonmoss.png)
 
