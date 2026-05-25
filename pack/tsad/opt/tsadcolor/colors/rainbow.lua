@@ -1,20 +1,23 @@
--- ldark
+-- rainbow
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#2c2c2c"
-p.dblue.g    = "#383838"
+
+p.dblue.g    = "#343434"
 p.dyellow.g  = "#505030"
 p.dcyan.g    = "#305050"
-p.dgrey.g    = "#888888"
-p.white.g    = "#e8e8e8"
-p.cyan.g     = "#b0d8ff"
-p.yellow.g   = "#d0b878"
-p.green.g    = "#a0d8a0"
+
+p.dgrey.g    = "#808080"
+p.white.g    = "#d8d8d8"
+
 p.red.g      = "#ff8880"
-p.magenta.g  = "#dca8f0"
+p.yellow.g   = "#d0b878"
+p.green.g    = "#a0c080"
+p.cyan.g     = "#a0c8f0"
+p.magenta.g  = "#d0a0c8"
 
 c.apply {
   search     = p.dcyan, 
