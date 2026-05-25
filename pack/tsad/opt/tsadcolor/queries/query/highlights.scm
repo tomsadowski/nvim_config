@@ -12,10 +12,10 @@
   name: (identifier) @variable)
 
 (field_definition
-  name: (identifier) @path)
+  name: (identifier) @keyword)
 
 (capture
-  (identifier) @path)
+  (identifier) @type)
 
 (negated_field
   "!" @operator

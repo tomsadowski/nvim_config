@@ -108,232 +108,129 @@
 (integer_literal) @number
 (float_literal) @number.float
 
+
 ; identifier
 (identifier) @normal
+(shorthand_field_initializer  (identifier) @variable.member)
+(field_initializer            (identifier) @variable)
+(assignment_expression  left: (identifier) @variable)
+(assignment_expression right: (identifier) @variable)
+(compound_assignment_expr     (identifier) @variable)
+(if_expression                (identifier) @variable)
+(array_expression             (identifier) @variable)
+(tuple_expression             (identifier) @variable)
+(index_expression             (identifier) @variable)
+(type_cast_expression         (identifier) @variable)
+(range_expression             (identifier) @variable)
+(binary_expression            (identifier) @variable)
+(return_expression            (identifier) @variable)
+(unary_expression             (identifier) @variable)
+(reference_expression  value: (identifier) @variable)
+(field_pattern                (identifier) @variable)
+(tuple_pattern                (identifier) @variable)
+(const_item             name: (identifier) @constant)
+(mod_item               name: (identifier) @normal)
+(function_item          name: (identifier) @function)
+(function_signature_item      (identifier) @function)
+(match_arm                    (identifier) @variable)
+(block                        (identifier) @variable)
+(lifetime                     (identifier) @variable)
+(scoped_type_identifier path: (identifier) @normal)
+(enum_variant           name: (identifier) @normal)
 
-(shorthand_field_initializer 
-  (identifier) @variable.member)
+(scoped_identifier path: (identifier) @normal)
+(scoped_identifier name: (identifier) @type)
 
-(assignment_expression
-  left: (identifier)  @variable)
 
-(assignment_expression 
-  right: (identifier) @variable)
-
-(if_expression
-  (identifier) @variable)
-
-(let_declaration
-  value: (identifier) @variable)
-
-(for_expression
-  pattern: (identifier) @variable)
-
-(for_expression
-  value: (identifier) @variable)
-
-(array_expression
-  (identifier) @variable)
-
-(compound_assignment_expr
-  (identifier) @variable)
-
-(tuple_expression 
-  (identifier) @variable)
-
-(index_expression
-  (identifier) @variable)
-
-(type_cast_expression
-  (identifier) @variable)
-
-(field_pattern 
-  (identifier) @variable)
-
-(field_initializer 
-  (identifier) @variable)
-
-(tuple_pattern 
-  (identifier) @variable)
-
-(range_expression 
-  (identifier) @variable)
-
-(binary_expression 
-  (identifier) @variable)
-
-(return_expression 
-  (identifier) @variable)
-
-(match_arm 
-  (identifier) @variable)
-
-(unary_expression 
-  (identifier) @variable)
-
-(match_expression 
-  (identifier) @variable)
-
-(arguments 
-  (identifier) @variable)
-
-(block 
-  (identifier) @variable)
-
-(const_item 
-  name: (identifier) @constant)
-
-(let_condition       
-  (identifier) @variable)
-
-(let_condition       
-  pattern: (tuple_struct_pattern)
-           (identifier) @variable)
-
-(reference_expression
-  value: (identifier) @variable)
-
+(for_expression      pattern: (identifier) @variable)
+(for_expression        value: (identifier) @variable)
 (for_expression 
-  (reference_expression
-    value: (identifier) @variable))
+  (reference_expression value: (identifier) @variable))
 
+(match_expression (identifier) @variable)
 (match_expression 
-  (reference_expression  
-    value: (identifier) @variable.parameter))
+  (reference_expression value: (identifier) @variable.parameter))
 
+(arguments (identifier) @variable)
 (arguments 
-  (reference_expression  
-    value: (identifier) @variable.parameter))
+  (reference_expression value: (identifier) @variable.parameter))
 
+(match_pattern (identifier) @variable)
 (match_pattern 
-  (scoped_identifier
-    name: (identifier) @type))  
+  (scoped_identifier name: (identifier) @type))  
 
-(match_pattern 
-  (identifier) @variable)
-
+(tuple_struct_pattern type: (identifier) @type)
 (tuple_struct_pattern   
   type: (identifier)    
         (identifier) @variable.parameter)
-
 (tuple_struct_pattern   
   type: (identifier) 
         (reference_pattern 
           (identifier) @variable.parameter))
-
-(reference_pattern 
-  (identifier) @variable.parameter)
-
-(parameter 
-  (ref_pattern
-    (identifier) @variable.parameter))
-
-(parameter 
-  (ref_pattern 
-    (mut_pattern
-      (identifier) @variable.parameter)))
-
 (tuple_struct_pattern   
   type: (scoped_identifier) 
         (identifier) @variable.parameter)
+(tuple_struct_pattern
+  type: (scoped_identifier
+    name: (identifier) @type))  
+(tuple_struct_pattern 
+  type: (identifier) @type
+        (identifier) @variable.parameter)
 
-(parameter 
-  pattern: (identifier) @variable.parameter)
+(let_condition (identifier) @variable)
+(let_condition       
+  pattern: (tuple_struct_pattern) (identifier) @variable)
 
-(lifetime
-  (identifier) @variable)
-
-((identifier) @constant (#match? @constant "^[A-Z][A-Z_]*$"))
-
-(mod_item 
-  name: (identifier) @normal)
-
-(attribute_item 
-  (attribute 
-    (identifier) @normal))
-
-(inner_attribute_item 
-  (attribute 
-    (identifier) @normal))
-
+(let_declaration       value: (identifier) @variable)
+(let_declaration     pattern: (identifier) @variable)
 (let_declaration 
   pattern: (tuple_struct_pattern 
     type: (identifier) 
           (identifier) @normal))
 
-(field_expression 
-  value: (identifier) @normal)
+(reference_pattern (identifier) @variable.parameter)
 
-(scoped_identifier
-  name: (identifier) @type)
+(parameter pattern: (identifier) @variable.parameter)
+(parameter 
+  (ref_pattern (identifier) @variable.parameter))
+(parameter 
+  (ref_pattern 
+    (mut_pattern (identifier) @variable.parameter)))
 
-(call_expression    
-  function: (identifier) @type)
-
-(tuple_struct_pattern
-  type: (scoped_identifier
-    name: (identifier) @type))  
-
-(call_expression 
-  function: (scoped_identifier 
-    name: (identifier) @type))
-
-(generic_function 
-  (scoped_identifier 
-    name: (identifier) @type))
-
-(function_item          
-  name: (identifier) @function)
-
-(let_declaration     
-  pattern: (identifier) @variable)
-
-(scoped_type_identifier 
-  path: (identifier) @normal)
-
-; names with uppercase should be types
-function: (scoped_identifier
-  path: (identifier)
-  name: (identifier) @type (#match? @type "^[A-Z]"))
-  
-; names with lowercase should be functions
-function: (scoped_identifier
-  path: (identifier)
-  name: (identifier) @function (#match? @function "^[a-z]"))
-
-(macro_invocation 
-  macro: (identifier) @function.macro)
-
-(macro_invocation
-  macro: (scoped_identifier 
-    (identifier) @function.macro .))
 
 (attribute 
   (scoped_identifier 
     (identifier)       @function.macro .))
 
-(function_signature_item      
-  (identifier)       @function)
+(attribute_item 
+  (attribute 
+    (identifier) @normal))
+(attribute_item
+  (attribute 
+    (identifier) 
+    arguments: (token_tree (identifier) @variable)))
 
-(generic_function             
-  (identifier)       @function)
+(inner_attribute_item 
+  (attribute 
+    (identifier) @normal))
 
-(call_expression    
-  function: (identifier) @function.call)
 
-(enum_variant
-  name: (identifier) @normal)
+(field_expression value: (identifier) @normal)
 
+(generic_function (identifier) @function)
+(generic_function 
+  (scoped_identifier name: (identifier) @type))
 (generic_function   
-  function: (field_expression   
-    value: (identifier) @variable))
-
-(call_expression 
   function: (field_expression 
     value: (identifier) @variable))
 
-(scoped_identifier      
-  path: (identifier) @normal)
+
+(macro_invocation macro: (identifier) @function.macro)
+(macro_invocation
+  macro: (scoped_identifier 
+    (identifier) @function.macro .))
+
+
 
 path: (scoped_identifier 
   path: (identifier) 
@@ -346,66 +243,73 @@ path: (scoped_identifier
 function: (scoped_identifier      
   (scoped_identifier 
     name: (identifier) @normal))
+function: (scoped_identifier
+  path: (identifier)
+  name: (identifier) @type (#match? @type "^[A-Z]"))
+function: (scoped_identifier
+  path: (identifier)
+  name: (identifier) @function (#match? @function "^[a-z]"))
 
-(tuple_struct_pattern 
-  type: (identifier) @type
-        (identifier) @variable.parameter)
+function: (identifier) @type     (#match? @type "^[A-Z]")
+function: (identifier) @function (#match? @function "^[a-z]")
 
-(tuple_struct_pattern 
-  type: (identifier) @type)
+(call_expression 
+  function: (field_expression 
+    value: (identifier) @variable))
+;(call_expression 
+;  function: (scoped_identifier 
+;    name: (identifier) @type))
 
 (mut_pattern 
   (mutable_specifier)
   (identifier) @variable)
 
-((identifier) @type (#any-of? @type "Some" "None" "Ok" "Err"))
 
-(attribute_item
-  (attribute
-    (identifier)
-    arguments: (token_tree
-      (identifier) @variable)))
-
-((scoped_use_list) 
-  path: (identifier) @normal (#set! priority 105))
-
-(use_list 
-  (identifier) @type (#set! priority 105))
-
+(use_list (identifier) @type)
 (use_list 
   (scoped_identifier
     path: (identifier) @normal
     name: (identifier) @type) (#set! priority 105))
 
-(scoped_use_list      
-  path: (scoped_identifier 
-    name: (identifier) @normal)) (#set! priority 105)
-
 (use_declaration      
   argument: (scoped_identifier 
     path: (identifier) @normal (#set! priority 105)
     name: (identifier) @type)) (#set! priority 105)
-
 (use_declaration      
   argument: (scoped_identifier 
     name: (identifier) @type)) (#set! priority 105)
+
+((scoped_use_list) 
+  path: (identifier) @normal (#set! priority 105))
+(scoped_use_list      
+  path: (scoped_identifier 
+    name: (identifier) @normal)) (#set! priority 105)
+
+((identifier) @constant (#match? @constant "^[A-Z][A-Z_]*$"))
+((identifier) @type     (#any-of? @type "Some" "None" "Ok" "Err"))
 
 
 ; shorthand_field_identifier
 (shorthand_field_identifier) @variable
 
+
 ; type_identifier
-(type_identifier) @type
+(type_identifier)                                       @type
+(type_arguments                       (type_identifier) @type) 
+(ordered_field_declaration_list type: (type_identifier) @type)
+(trait_item                     name: (type_identifier) @type)
+(struct_item                    name: (type_identifier) @type)
+(enum_item                      name: (type_identifier) @type)
+(type_parameter                 name: (type_identifier) @type.parameter)
+(where_predicate                left: (type_identifier) @type.parameter)
 
-(ordered_field_declaration_list 
-  type: (type_identifier) @type)
-
-(scoped_type_identifier         
-  name: (type_identifier) @type)
-
+(impl_item        (type_identifier) @type)
+(impl_item trait: (type_identifier) @type)
+(impl_item  type: (type_identifier) @type)
 (impl_item 
-  (generic_type 
-    (type_identifier) @type))
+  (generic_type (type_identifier) @type))
+
+(scoped_type_identifier name: (type_identifier) @type)
 
 (generic_type 
   type: (scoped_type_identifier 
@@ -415,41 +319,15 @@ function: (scoped_identifier
   name: (scoped_type_identifier 
     name: (type_identifier) @type))
 
-(impl_item 
-  (type_identifier) @normal)
-
-(trait_item 
-  name: (type_identifier) @type)
-
-(impl_item 
-  trait: (type_identifier) @type)
-
-(impl_item 
-  type:  (type_identifier) @type)
-
-(struct_item 
-  name: (type_identifier) @type)
-
-(enum_item 
-  name: (type_identifier) @type)
-
-type_arguments: (type_arguments 
-  (type_identifier) @type) 
-
-(where_predicate 
-  left: (type_identifier) @type.parameter)
-
-(type_parameter 
-  name: (type_identifier) @type.parameter)
-
 ; field_identifier
 (field_identifier) @variable
+(field_pattern     name: (field_identifier) @normal)
+(field_declaration name: (field_identifier) @variable.member.declaration)
 
-(field_declaration 
-  name: (field_identifier) @variable.member.declaration)
-
-(field_expression 
-  field: (field_identifier) @variable.member)
+(field_expression field: (field_identifier) @variable.member)
+(field_expression      
+  value: (field_expression      
+    field: (field_identifier) @normal))
 
 (index_expression 
   (field_expression
@@ -461,53 +339,27 @@ type_arguments: (type_arguments
 
 (call_expression    
   function: (field_expression 
-    field: (field_identifier) @function.call))
-
-(field_expression      
-  value: (field_expression      
-    field: (field_identifier) @normal))
-
+    field: (field_identifier) @function))
 (call_expression    
   function: (field_expression
     value: (field_expression
       field: (field_identifier) @variable)))
 
-"$" @function.macro
-
-(macro_invocation 
-  "!" @function.call)
-
-(closure_parameters 
-  (_) @variable.parameter)
-
-(parameter 
-  "_" @variable.parameter.builtin)
-
 ; self
-(self) @variable.builtin
-
-(field_expression      
-  value: (self) @normal)
-
+(self)                          @variable.builtin
+(use_list                (self) @type (#set! priority 105))
+(field_expression value: (self) @normal)
 (call_expression 
   function: (field_expression   
     value: (self) @variable))
 
-(use_list 
-  (self) @type (#set! priority 105))
-
+; misc
 (metavariable) @function.macro
+(macro_definition "macro_rules!" @function.macro)
+(ordered_field_declaration_list type: (generic_type) @type)
+(scoped_type_identifier         path: (scoped_identifier) @normal)
+"$" @function.macro
+(macro_invocation "!" @function)
+(closure_parameters (_) @variable.parameter)
+(parameter "_" @variable.parameter.builtin)
 
-(macro_definition 
-  "macro_rules!" @function.macro)
-
-(ordered_field_declaration_list 
-  type: (generic_type) @type)
-
-(trait_bounds) @normal
-
-(scoped_type_identifier 
-  path: (scoped_identifier) @normal)
-
-(field_expression      
-  field: (integer_literal) @number)
