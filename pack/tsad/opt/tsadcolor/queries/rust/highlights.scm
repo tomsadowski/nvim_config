@@ -243,6 +243,12 @@ function: (scoped_identifier
 function: (scoped_identifier
   path: (identifier)
   name: (identifier) @function (#match? @function "^[a-z]"))
+function: (scoped_identifier
+  path: (scoped_identifier)
+  name: (identifier) @type (#match? @type "^[A-Z]"))
+function: (scoped_identifier
+  path: (scoped_identifier)
+  name: (identifier) @function (#match? @function "^[a-z]"))
 
 function: (identifier) @type     (#match? @type "^[A-Z]")
 function: (identifier) @function (#match? @function "^[a-z]")
@@ -350,7 +356,7 @@ function: (identifier) @function (#match? @function "^[a-z]")
 (metavariable) @function.macro
 (macro_definition "macro_rules!" @function.macro)
 (ordered_field_declaration_list type: (generic_type) @type)
-(scoped_type_identifier         path: (scoped_identifier) @normal)
+(scoped_type_identifier         path: (scoped_identifier) @normal (#set! priority 105))
 "$" @function.macro
 (macro_invocation "!" @function)
 (closure_parameters (_) @variable.parameter)
