@@ -1,4 +1,4 @@
--- mosswarm
+-- coolmoss
 
 require "treesitter"
 local c = require "color"
@@ -15,7 +15,7 @@ p.white.g    = "#d0d0d0"
 
 p.red.g      = "#e08078"
 p.yellow.g   = "#c8ba70"
-p.green.g    = "#a0b870"
+p.green.g    = "#80b898"
 p.cyan.g     = "#b8b8f0"
 p.magenta.g  = "#d898a8"
 
