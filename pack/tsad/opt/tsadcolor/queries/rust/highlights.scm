@@ -234,24 +234,34 @@ path: (scoped_identifier
   (scoped_identifier 
     name: (identifier) @normal))
 
+
+function: (identifier) @type     (#match? @type "^[A-Z]")
+function: (identifier) @function (#match? @function "^[a-z]")
+
 function: (scoped_identifier      
   (scoped_identifier 
     name: (identifier) @normal))
+
 function: (scoped_identifier
   path: (identifier)
   name: (identifier) @type (#match? @type "^[A-Z]"))
+
 function: (scoped_identifier
   path: (identifier)
   name: (identifier) @function (#match? @function "^[a-z]"))
+
 function: (scoped_identifier
   path: (scoped_identifier)
   name: (identifier) @type (#match? @type "^[A-Z]"))
+
 function: (scoped_identifier
   path: (scoped_identifier)
   name: (identifier) @function (#match? @function "^[a-z]"))
 
-function: (identifier) @type     (#match? @type "^[A-Z]")
-function: (identifier) @function (#match? @function "^[a-z]")
+(call_expression
+  function: (identifier) @type     (#match? @type "^[A-Z]"))
+(call_expression
+  function: (identifier) @function (#match? @function "^[a-z]"))
 
 (call_expression 
   function: (field_expression 
