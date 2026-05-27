@@ -9,14 +9,8 @@
 
 ## Colorschemes
 
-### moss
-![moss](pics/moss.png)
-
-### drainbow
-![drainbow](pics/drainbow.png)
-
-### rainbow
-![rainbow](pics/rainbow.png)
+### deep
+![deep](pics/deep.png)
 
 ### moon
 ![moon](pics/moon.png)
