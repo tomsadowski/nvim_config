@@ -15,8 +15,8 @@ p.white.g    = "#d0d0d0"
 
 p.red.g      = "#e08078"
 p.yellow.g   = "#c8b870"
-p.green.g    = "#90b888"
-p.cyan.g     = "#b0a8e0"
+p.green.g    = "#88c090"
+p.cyan.g     = "#b0ace0"
 p.magenta.g  = "#d898a8"
 
 c.apply {
