@@ -15,7 +15,7 @@ p.white.g    = "#d0d0d0"
 
 p.red.g      = "#e08078"
 p.yellow.g   = "#c8b870"
-p.green.g    = "#80b070"
+p.green.g    = "#80b878"
 p.cyan.g     = "#a0b0e0"
 p.magenta.g  = "#d898a8"
 
