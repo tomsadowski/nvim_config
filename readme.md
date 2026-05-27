@@ -9,14 +9,11 @@
 
 ## Colorschemes
 
+### drainbow
+![drainbow](pics/drainbow.png)
+
 ### rainbow
 ![rainbow](pics/rainbow.png)
 
 ### moonmoss
 ![moonmoss](pics/moonmoss.png)
-
-### spring
-![spring](pics/spring.png)
-
-### fire
-![fire](pics/fire.png)
