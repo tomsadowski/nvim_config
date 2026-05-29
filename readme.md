@@ -9,8 +9,8 @@
 
 ## Colorschemes
 
-### deep
-![deep](pics/deep.png)
+### full
+![full](pics/full.png)
 
 ### moon
 ![moon](pics/moon.png)
