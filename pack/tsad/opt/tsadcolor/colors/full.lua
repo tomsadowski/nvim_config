@@ -1,4 +1,4 @@
--- even
+-- full
 
 require "treesitter"
 local c = require "color"
@@ -14,9 +14,9 @@ p.dgrey.g    = "#808080"
 p.white.g    = "#d0d0d0"
 
 p.red.g      = "#e08078"
-p.yellow.g   = "#c8b870"
-p.green.g    = "#80b878"
-p.cyan.g     = "#a0b0e0"
+p.yellow.g   = "#c8b878"
+p.green.g    = "#88c090"
+p.cyan.g     = "#b0b0e0"
 p.magenta.g  = "#d898a8"
 
 c.apply {
