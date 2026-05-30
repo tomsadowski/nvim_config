@@ -1,59 +1,44 @@
--- moss
+-- full
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
-local p2 = vim.deepcopy(c.palette)
 
-  p.black.g    = "#202425"
+p.black.g    = "#1b1d20"
 
-  p.dblue.g    = "#303638"
-  p.dyellow.g  = "#3c3a2c"
-  p.dcyan.g    = "#283c3a"
+p.dblue.g    = "#401d20"
+p.dyellow.g  = "#204020"
+p.dcyan.g    = "#203050"
 
-  p.dgrey.g    = "#505858"
-  p.grey.g     = "#808888"
-  p.dmagenta.g = "#a090b0"
+p.dgrey.g    = "#707880"
+p.white.g    = "#d0d0d0"
 
-  p.white.g    = "#b2b09a"
-
-  p.red.g      = "#d89068"
-  p.yellow.g   = "#d8d4b0"
-  p.green.g    = "#a8c080"
-  p.cyan.g     = "#a8c8c4"
-  p.magenta.g  = "#e0a0a8"
+p.red.g      = "#e08078"
+p.yellow.g   = "#c8b878"
+p.green.g    = "#88c090"
+p.cyan.g     = "#a0b0f0"
+p.magenta.g  = "#d894b0"
 
 c.apply {
-  canvas     = p.black, 
-
   search     = p.dcyan, 
   visual     = p.dyellow, 
   diagund    = p.dblue,
-
-  lineno     = p.dgrey, 
+  canvas     = p.black, 
   signcol    = p.dgrey, 
-
-  msgarea    = p.grey, 
-  curlineno  = p.grey, 
-
-  comment    = p.dmagenta, 
-
-  keyword    = p.red,
-
+  lineno     = p.dgrey, 
+  msgarea    = p.dgrey, 
+  comment    = p.dgrey, 
   normal     = p.white, 
-  constant   = p.white, 
-
-  item       = p.yellow, 
-  matchparen = p.yellow, 
-
-  type       = p.green, 
-
-  func       = p.yellow, 
-
+  curlineno  = p.white, 
+  keyword    = p.red,
   variable   = p.cyan, 
-  btype      = p.cyan, 
   typeparam  = p.cyan,
-
+  matchparen = p.yellow, 
+  func       = p.yellow, 
+  item       = p.green, 
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.magenta, 
   literal    = p.magenta, 
   str        = p.magenta, 
 }

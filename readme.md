@@ -11,6 +11,3 @@
 
 ### full
 ![full](pics/full.png)
-
-### moon
-![moon](pics/moon.png)

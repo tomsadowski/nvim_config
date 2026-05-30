@@ -230,7 +230,7 @@
   "module"
   "this"
   "base"
-] @normal
+] @keyword
 
 (constructor_declaration
   name: (identifier) @constructor)
@@ -380,23 +380,17 @@
   "break"
   "case"
   "when"
-] @keyword.conditional
-
-[
   "while"
   "for"
   "do"
   "continue"
   "goto"
   "foreach"
-] @keyword.repeat
-
-[
   "try"
   "catch"
   "throw"
   "finally"
-] @keyword.exception
+] @keyword
 
 [
   "+"
@@ -480,11 +474,11 @@
 [
   "using"
   "as"
-] @keyword.import
+] @keyword
 
 (alias_qualified_name
   (identifier
-    "global") @keyword.import)
+    "global") @keyword)
 
 [
   "with"
@@ -502,7 +496,7 @@
   "in"
   "out"
   "ref"
-] @keyword.operator
+] @keyword
 
 [
   "lock"
@@ -539,12 +533,12 @@
   "namespace"
   "event"
   "delegate"
-] @keyword.type
+] @keyword
 
 [
   "async"
   "await"
-] @keyword.coroutine
+] @keyword
 
 [
   "const"
@@ -565,10 +559,10 @@
   "sealed"
   "virtual"
   "global"
-] @keyword.modifier
+] @keyword
 
 (scoped_type
-  "scoped" @keyword.modifier)
+  "scoped" @keyword)
 
 (query_expression
   (_
@@ -587,4 +581,4 @@
 [
   "return"
   "yield"
-] @keyword.return
+] @keyword

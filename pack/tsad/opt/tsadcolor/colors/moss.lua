@@ -41,14 +41,13 @@ c.apply {
   keyword    = p.red,
 
   normal     = p.white, 
-  constant   = p.white, 
 
   item       = p.yellow, 
-  matchparen = p.yellow, 
+  func       = p.yellow, 
 
+  matchparen = p.green, 
   type       = p.green, 
 
-  func       = p.yellow, 
 
   variable   = p.cyan, 
   btype      = p.cyan, 
@@ -56,4 +55,5 @@ c.apply {
 
   literal    = p.magenta, 
   str        = p.magenta, 
+  constant   = p.magenta, 
 }
