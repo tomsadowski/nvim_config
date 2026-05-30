@@ -1,4 +1,4 @@
--- moonmoss
+-- moon
 
 require "treesitter"
 local c = require "color"
@@ -13,18 +13,15 @@ local p2 = vim.deepcopy(c.palette)
 
   p.dgrey.g    = "#505858"
   p.grey.g     = "#808888"
-  p.dmagenta.g = "#a090b0"
---p.dmagenta.g = "#a898c0"
 
   p.white.g    = "#b2b09a"
-  p.yellow.g   = "#d8d4b0"
---p.yellow.g   = "#d6d6a6"
 
-  p.red.g      = "#d89468"
---p.red.g      = "#d89060"
+  p.red.g      = "#d89068"
+  p.yellow.g   = "#d8d4b0"
+  p.green.g    = "#d8d4b0"
   p.cyan.g     = "#a8c8c4"
---p.cyan.g     = "#a0c8c2"
-  p.magenta.g  = "#e0a0a8"
+  p.magenta.g  = "#d8a8a8"
+  p.dmagenta.g = "#b8a0d0"
 
 c.apply {
   canvas     = p.black, 
@@ -39,7 +36,7 @@ c.apply {
   msgarea    = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dmagenta, 
+  comment    = p.grey, 
 
   keyword    = p.red,
 
@@ -48,13 +45,15 @@ c.apply {
 
   item       = p.yellow, 
   matchparen = p.yellow, 
-  type       = p.yellow, 
+
+  type       = p.magenta, 
+
   func       = p.yellow, 
 
   variable   = p.cyan, 
   btype      = p.cyan, 
   typeparam  = p.cyan,
 
-  literal    = p.magenta, 
-  str        = p.magenta, 
+  literal    = p.dmagenta, 
+  str        = p.dmagenta, 
 }
