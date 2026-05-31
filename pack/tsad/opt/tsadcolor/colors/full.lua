@@ -13,10 +13,10 @@ p.dcyan.g    = "#203050"
 p.dgrey.g    = "#707880"
 p.white.g    = "#d0d0d0"
 
-p.red.g      = "#e08078"
-p.yellow.g   = "#c8b878"
+p.red.g      = "#e07c78"
+p.yellow.g   = "#b8a878"
 p.green.g    = "#88b890"
-p.cyan.g     = "#a0b0f0"
+p.cyan.g     = "#a0b0e0"
 p.magenta.g  = "#d894b0"
 
 c.apply {
