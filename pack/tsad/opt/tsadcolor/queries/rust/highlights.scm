@@ -332,6 +332,7 @@ function: (scoped_identifier
 (field_identifier) @variable
 (field_pattern     name: (field_identifier) @normal)
 (field_declaration name: (field_identifier) @variable.member.declaration)
+(field_initializer       (field_identifier) @normal)
 
 (field_expression field: (field_identifier) @variable.member)
 (field_expression      
