@@ -1,10 +1,10 @@
--- mfull
+-- chalk
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#242528"
+p.black.g    = "#262728"
 
 p.dblue.g    = "#401d20"
 p.dyellow.g  = "#204020"
