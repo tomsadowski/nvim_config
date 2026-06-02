@@ -297,6 +297,13 @@ function: (scoped_identifier
 ((identifier) @constant (#match? @constant "^[A-Z][A-Z_]*$"))
 ((identifier) @type     (#any-of? @type "Some" "None" "Ok" "Err"))
 
+(let_declaration
+  pattern: (tuple_struct_pattern
+    type: (identifier)
+          (identifier) @variable
+  )
+)
+
 
 ; shorthand_field_identifier
 (shorthand_field_identifier) @variable
