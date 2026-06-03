@@ -1,4 +1,4 @@
--- chalk
+-- mfull
 
 require "treesitter"
 local c = require "color"
