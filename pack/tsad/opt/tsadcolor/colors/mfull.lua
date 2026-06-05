@@ -6,7 +6,7 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#242528"
 
-p.dblue.g    = "#401d20"
+p.dred.g     = "#402528"
 p.dyellow.g  = "#204020"
 p.dcyan.g    = "#203050"
 
@@ -22,7 +22,7 @@ p.magenta.g  = "#e0a0b4"
 c.apply {
   search     = p.dcyan, 
   visual     = p.dyellow, 
-  diagund    = p.dblue,
+  diagund    = p.dred,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
