@@ -1,4 +1,4 @@
--- full
+-- dfull
 
 require "treesitter"
 local c = require "color"
@@ -13,9 +13,9 @@ p.dcyan.g    = "#203050"
 p.dgrey.g    = "#707880"
 p.white.g    = "#d0d0d0"
 
-p.red.g      = "#e07c78"
-p.yellow.g   = "#b8a878"
-p.green.g    = "#88b890"
+p.red.g      = "#e07c79"
+p.yellow.g   = "#b8aa78"
+p.green.g    = "#8cb092"
 p.cyan.g     = "#a0b0e0"
 p.magenta.g  = "#d894b0"
 
