@@ -1,4 +1,4 @@
--- dirt
+-- sand
 
 require "treesitter"
 local c = require "color"
@@ -13,10 +13,10 @@ p.dcyan.g    = "#203050"
 p.dgrey.g    = "#787c80"
 p.white.g    = "#e0e0e0"
 
-p.red.g      = "#d08880"
+p.red.g      = "#e08480"
 p.yellow.g   = "#d0b0a0"
-p.green.g    = "#a8b088"
-p.cyan.g     = "#b8c8e0"
+p.green.g    = "#b0b880"
+p.cyan.g     = "#b8c0e0"
 p.magenta.g  = "#d8a4b8"
 
 c.apply {
