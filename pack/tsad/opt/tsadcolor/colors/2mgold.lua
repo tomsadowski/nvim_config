@@ -1,28 +1,28 @@
--- dfull
+-- mgold
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#1b1d1f"
+p.black.g    = "#242528"
 
-p.dblue.g    = "#401d20"
+p.dred.g     = "#402528"
 p.dyellow.g  = "#204020"
 p.dcyan.g    = "#203050"
 
-p.dgrey.g    = "#787878"
-p.white.g    = "#d0d0d0"
+p.dgrey.g    = "#787c80"
+p.white.g    = "#e0e0e0"
 
-p.red.g      = "#e07c79"
-p.yellow.g   = "#b8aa78"
-p.green.g    = "#8cb092"
-p.cyan.g     = "#a0b0e0"
-p.magenta.g  = "#d494b0"
+p.red.g      = "#e88480"
+p.yellow.g   = "#d0b090"
+p.green.g    = "#bcb880"
+p.cyan.g     = "#b0c8f0"
+p.magenta.g  = "#e0a0b4"
 
 c.apply {
   search     = p.dcyan, 
   visual     = p.dyellow, 
-  diagund    = p.dblue,
+  diagund    = p.dred,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
@@ -33,11 +33,11 @@ c.apply {
   keyword    = p.red,
   variable   = p.cyan, 
   typeparam  = p.cyan,
-  matchparen = p.yellow, 
-  func       = p.yellow, 
-  item       = p.green, 
-  type       = p.green, 
-  btype      = p.green, 
+  matchparen = p.green, 
+  func       = p.green, 
+  item       = p.yellow, 
+  type       = p.yellow, 
+  btype      = p.yellow, 
   constant   = p.magenta, 
   literal    = p.magenta, 
   str        = p.magenta, 

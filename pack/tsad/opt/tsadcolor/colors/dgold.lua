@@ -1,4 +1,4 @@
--- dfull
+-- gold
 
 require "treesitter"
 local c = require "color"
@@ -10,12 +10,12 @@ p.dblue.g    = "#401d20"
 p.dyellow.g  = "#204020"
 p.dcyan.g    = "#203050"
 
-p.dgrey.g    = "#787878"
+p.dgrey.g    = "#727478"
 p.white.g    = "#d0d0d0"
 
 p.red.g      = "#e07c79"
-p.yellow.g   = "#b8aa78"
-p.green.g    = "#8cb092"
+p.yellow.g   = "#c0a078"
+p.green.g    = "#b0b080"
 p.cyan.g     = "#a0b0e0"
 p.magenta.g  = "#d494b0"
 
