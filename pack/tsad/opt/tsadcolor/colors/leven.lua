@@ -1,28 +1,28 @@
--- sand
+-- leven
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#242528"
+p.black.g    = "#303030"
 
-p.dred.g     = "#402528"
+p.dblue.g    = "#401d20"
 p.dyellow.g  = "#204020"
 p.dcyan.g    = "#203050"
 
-p.dgrey.g    = "#787c80"
+p.dgrey.g    = "#787878"
 p.white.g    = "#e0e0e0"
 
-p.red.g      = "#e08480"
-p.yellow.g   = "#d0b0a0"
-p.green.g    = "#b0b880"
-p.cyan.g     = "#b8c0e0"
-p.magenta.g  = "#d8a4b8"
+p.red.g      = "#ff8c89"
+p.yellow.g   = "#e0d898"
+p.green.g    = "#98e8c8"
+p.cyan.g     = "#c0d8ff"
+p.magenta.g  = "#ffb8d0"
 
 c.apply {
   search     = p.dcyan, 
   visual     = p.dyellow, 
-  diagund    = p.dred,
+  diagund    = p.dblue,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
