@@ -17,7 +17,7 @@ p.red.g      = "#f89060"
 p.yellow.g   = "#c8e070"
 p.green.g    = "#90e0c8"
 p.cyan.g     = "#c0c8ff"
-p.magenta.g  = "#f0b0c0"
+p.magenta.g  = "#f0a0b0"
 
 c.apply {
   search     = p.dcyan, 
