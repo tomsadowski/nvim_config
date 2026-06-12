@@ -1,4 +1,4 @@
--- saturated
+-- leven
 
 require "treesitter"
 local c = require "color"
@@ -13,11 +13,11 @@ p.dcyan.g    = "#303050"
 p.dgrey.g    = "#787878"
 p.white.g    = "#e0e0e0"
 
-p.red.g      = "#ff8c89"
-p.yellow.g   = "#d8c888"
-p.green.g    = "#90e8c8"
-p.cyan.g     = "#b0d8ff"
-p.magenta.g  = "#ffb0d0"
+p.red.g      = "#f08c89"
+p.yellow.g   = "#d0c098"
+p.green.g    = "#98e8c8"
+p.cyan.g     = "#b0d0ff"
+p.magenta.g  = "#ffb0c0"
 
 c.apply {
   search     = p.dcyan, 

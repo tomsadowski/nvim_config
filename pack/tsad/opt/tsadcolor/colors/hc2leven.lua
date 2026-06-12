@@ -1,4 +1,4 @@
--- saturated
+-- leven
 
 require "treesitter"
 local c = require "color"
@@ -6,18 +6,18 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#303030"
 
-p.dblue.g    = "#503030"
-p.dyellow.g  = "#305040"
-p.dcyan.g    = "#303050"
+p.dblue.g    = "#401d20"
+p.dyellow.g  = "#204020"
+p.dcyan.g    = "#203050"
 
 p.dgrey.g    = "#787878"
 p.white.g    = "#e0e0e0"
 
-p.red.g      = "#ff8c89"
-p.yellow.g   = "#d8c888"
-p.green.g    = "#90e8c8"
-p.cyan.g     = "#b0d8ff"
-p.magenta.g  = "#ffb0d0"
+p.red.g      = "#f08c89"
+p.yellow.g   = "#d0c898"
+p.green.g    = "#98e8c8"
+p.cyan.g     = "#c8c0ff"
+p.magenta.g  = "#ffb0c0"
 
 c.apply {
   search     = p.dcyan, 
@@ -31,10 +31,10 @@ c.apply {
   normal     = p.white, 
   curlineno  = p.white, 
   keyword    = p.red,
-  variable   = p.yellow, 
-  typeparam  = p.yellow,
-  matchparen = p.cyan, 
-  func       = p.cyan, 
+  variable   = p.cyan, 
+  typeparam  = p.cyan,
+  matchparen = p.yellow, 
+  func       = p.yellow, 
   item       = p.green, 
   type       = p.green, 
   btype      = p.green, 
