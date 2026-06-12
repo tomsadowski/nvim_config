@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### perfection
+![perfection](pics/perfection.png)
+
 ### mfull
 ![mfull](pics/mfull.png)
 

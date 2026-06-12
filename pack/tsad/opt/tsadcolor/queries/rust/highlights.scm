@@ -99,8 +99,8 @@
 
 (line_comment) @comment
 (block_comment) @comment
-(outer_doc_comment_marker) @comment.documentation
-(inner_doc_comment_marker) @comment.documentation
+(outer_doc_comment_marker) @comment
+(inner_doc_comment_marker) @comment
 (raw_string_literal) @string
 (string_literal) @string
 (char_literal) @character
@@ -219,7 +219,7 @@
   (scoped_identifier name: (identifier) @type))
 (generic_function   
   function: (field_expression 
-    value: (identifier) @variable))
+    value: (identifier) @type))
 
 (macro_invocation macro: (identifier) @function.macro)
 (macro_invocation
@@ -316,8 +316,8 @@ function: (scoped_identifier
 (trait_item                     name: (type_identifier) @type)
 (struct_item                    name: (type_identifier) @type)
 (enum_item                      name: (type_identifier) @type)
-(type_parameter                 name: (type_identifier) @type.parameter)
-(where_predicate                left: (type_identifier) @type.parameter)
+(type_parameter                 name: (type_identifier) @type)
+(where_predicate                left: (type_identifier) @type)
 
 (impl_item        (type_identifier) @type)
 (impl_item trait: (type_identifier) @type)
