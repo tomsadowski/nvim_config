@@ -362,6 +362,10 @@ function: (scoped_identifier
     value: (field_expression
       field: (field_identifier) @variable)))
 
+function: (field_expression ; [57, 16] - [57, 23]
+  value: (identifier) @variable; [57, 16] - [57, 17]
+  field: (field_identifier)) ; [57, 18] - [57, 23]
+
 ; self
 (self)                          @variable.builtin
 (use_list                (self) @type (#set! priority 105))
@@ -369,6 +373,7 @@ function: (scoped_identifier
 (call_expression 
   function: (field_expression   
     value: (self) @variable))
+
 
 ; misc
 (metavariable) @function.macro

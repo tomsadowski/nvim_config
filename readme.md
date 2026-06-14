@@ -9,8 +9,8 @@
 
 ## Colorschemes
 
-### perfection
-![perfection](pics/perfection.png)
+### garden
+![garden](pics/garden.png)
 
 ### mfull
 ![mfull](pics/mfull.png)
