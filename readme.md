@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### bfire
+![bfire](pics/bfire.png)
+
 ### garden
 ![garden](pics/garden.png)
 
