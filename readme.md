@@ -9,17 +9,5 @@
 
 ## Colorschemes
 
-### night
-![night](pics/night.png)
-
-### bfire
-![bfire](pics/bfire.png)
-
-### garden
-![garden](pics/garden.png)
-
-### mfull
-![mfull](pics/mfull.png)
-
-### full
-![full](pics/full.png)
+### sunset
+![sunset](pics/sunset.png)

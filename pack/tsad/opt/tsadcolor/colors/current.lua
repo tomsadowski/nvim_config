@@ -15,7 +15,7 @@ p.dcyan.g    = "#20302c"
 p.red.g      = "#f07060"
 p.yellow.g   = "#d8c050"
 p.green.g    = "#80d0b0"
-p.cyan.g     = "#b4b4f0"
+p.cyan.g     = "#b4ace8"
 p.magenta.g  = "#e0a0b0"
 
 c.apply {
@@ -37,7 +37,7 @@ c.apply {
   btype      = p.green, 
   matchparen = p.magenta, 
   func       = p.magenta, 
-  constant   = p.cyan, 
+  constant   = p.green, 
   literal    = p.cyan, 
   str        = p.cyan, 
 }
