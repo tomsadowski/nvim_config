@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### night
+![night](pics/night.png)
+
 ### bfire
 ![bfire](pics/bfire.png)
 
