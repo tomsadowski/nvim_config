@@ -1,4 +1,4 @@
--- fire
+-- dthe
 
 require "treesitter"
 local c = require "color"
@@ -13,8 +13,8 @@ p.dyellow.g  = "#2c3020"
 p.dcyan.g    = "#20302c"
 
 p.red.g      = "#f06050"
-p.yellow.g   = "#c8b040"
-p.green.g    = "#60b090"
+p.yellow.g   = "#c8a850"
+p.green.g    = "#78a068"
 p.cyan.g     = "#a498d8"
 p.magenta.g  = "#d08090"
 

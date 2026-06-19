@@ -1,4 +1,4 @@
--- 3sunset
+-- the
 
 require "treesitter"
 local c = require "color"
@@ -15,7 +15,7 @@ p.dcyan.g    = "#20302c"
 p.red.g      = "#f07060"
 p.yellow.g   = "#d8b860"
 p.green.g    = "#98c080"
-p.cyan.g     = "#b8ace0"
+p.cyan.g     = "#b8aaf0"
 p.magenta.g  = "#e0a0b0"
 
 c.apply {

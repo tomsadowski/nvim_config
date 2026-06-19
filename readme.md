@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### sunset
-![sunset](pics/sunset.png)
+### the
+![the](pics/the.png)
