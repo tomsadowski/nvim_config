@@ -8,9 +8,9 @@ p.black.g    = "#141618"
 p.dgrey.g    = "#606870"
 p.white.g    = "#c0b0a0"
 
-p.dmagenta.g = "#402028"
-p.dyellow.g  = "#2c3020"
-p.dcyan.g    = "#20302c"
+p.dmagenta.g = "#302024"
+p.dyellow.g  = "#302c20"
+p.dcyan.g    = "#202c30"
 
 p.magenta.g  = "#c48894"
 p.red.g      = "#d06050"
