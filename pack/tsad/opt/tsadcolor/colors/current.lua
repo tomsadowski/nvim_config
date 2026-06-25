@@ -1,4 +1,4 @@
--- dperfectocean
+-- ocean
 
 require "treesitter"
 local c = require "color"

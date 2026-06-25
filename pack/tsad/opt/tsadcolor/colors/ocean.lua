@@ -1,22 +1,22 @@
--- the
+-- ocean
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#141618"
-p.dgrey.g    = "#807c7a"
+p.dgrey.g    = "#606870"
 p.white.g    = "#c0b0a0"
 
 p.dmagenta.g = "#402028"
 p.dyellow.g  = "#2c3020"
 p.dcyan.g    = "#20302c"
 
+p.magenta.g  = "#c48894"
 p.red.g      = "#d06050"
-p.yellow.g   = "#d8a850"
-p.green.g    = "#80a098"
-p.cyan.g     = "#b0a0f0"
-p.magenta.g  = "#d090a0"
+p.yellow.g   = "#b89050"
+p.green.g    = "#80a070"
+p.cyan.g     = "#a090d0"
 
 c.apply {
   search     = p.dyellow, 
