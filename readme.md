@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### the
-![the](pics/the.png)
+### blocean
+![blocean](pics/blocean.png)
