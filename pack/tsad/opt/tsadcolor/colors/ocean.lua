@@ -8,20 +8,22 @@ p.black.g    = "#141618"
 p.dgrey.g    = "#606870"
 p.white.g    = "#c0b0a0"
 
-p.dmagenta.g = "#302024"
-p.dyellow.g  = "#302c20"
-p.dcyan.g    = "#202c30"
+p.dred.g     = "#301618"
+p.dyellow.g  = "#403818"
+p.dblue.g    = "#142430"
 
-p.magenta.g  = "#c48894"
+p.magenta.g  = "#c48490"
 p.red.g      = "#d06050"
 p.yellow.g   = "#b89050"
-p.green.g    = "#80a070"
-p.cyan.g     = "#a090d0"
+p.cyan.g     = "#78a0b0"
+p.blue.g     = "#a090c8"
+
+local CONSTANT = ""
 
 c.apply {
   search     = p.dyellow, 
-  visual     = p.dcyan, 
-  diagund    = p.dmagenta,
+  visual     = p.dblue, 
+  diagund    = p.dred,
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
@@ -32,12 +34,12 @@ c.apply {
   keyword    = p.red,
   variable   = p.yellow, 
   typeparam  = p.yellow,
-  item       = p.green, 
-  type       = p.green, 
-  btype      = p.green, 
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
   matchparen = p.magenta, 
   func       = p.magenta, 
-  constant   = p.green, 
-  literal    = p.cyan, 
-  str        = p.cyan, 
+  literal    = p.blue, 
+  str        = p.blue, 
 }
