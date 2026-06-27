@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### blocean
-![blocean](pics/blocean.png)
+### blast
+![blast](pics/blast.png)
