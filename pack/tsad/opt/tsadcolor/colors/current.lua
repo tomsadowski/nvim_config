@@ -8,15 +8,15 @@ p.black.g    = "#303438"
 p.dgrey.g    = "#747a80"
 p.white.g    = "#f0e0d0"
 
-p.dred.g     = "#503638"
+p.dred.g     = "#483638"
 p.dyellow.g  = "#605838"
 p.dblue.g    = "#344450"
 
 p.magenta.g  = "#ffb8c8"
 p.red.g      = "#ff8070"
 p.yellow.g   = "#f0d088"
-p.cyan.g     = "#b8d0ff"
-p.blue.g     = "#d6bcff"
+p.cyan.g     = "#b8d4f0"
+p.blue.g     = "#d8bcff"
 
 local CONSTANT = ""
 
