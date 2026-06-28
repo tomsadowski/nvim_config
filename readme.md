@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### blast
-![blast](pics/blast.png)
+### glowingoceanfloor
+![glowingoceanfloor](pics/glowingoceanfloor.png)

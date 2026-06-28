@@ -16,7 +16,7 @@ p.dblue.g    = "#244050"
 p.magenta.g  = "#ffb0c0"
 p.red.g      = "#ff8070"
 p.yellow.g   = "#e0b870"
-p.cyan.g     = "#b4d6e0"
+p.cyan.g     = "#b0d6c8"
 p.blue.g     = "#d8bcff"
 
 local CONSTANT = ""
@@ -31,7 +31,7 @@ c.apply {
   lineno     = p.dgrey, 
   msgarea    = p.dgrey, 
   comment    = p.dgrey, 
-  curlineno  = p.grey, 
+  curlineno  = p.white, 
 
   normal     = p.white, 
   matchparen = p.magenta, 
