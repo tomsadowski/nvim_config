@@ -1,22 +1,22 @@
--- blast
+-- smooth
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#283038"
+p.black.g    = "#2a3037"
 p.dgrey.g    = "#747a80"
-p.white.g    = "#f0e0d0"
+p.white.g    = "#e0d0c0"
 
 p.dred.g     = "#483638"
 p.dyellow.g  = "#605838"
 p.dblue.g    = "#344450"
 
-p.magenta.g  = "#ffb8c8"
-p.red.g      = "#ff8070"
-p.yellow.g   = "#f0d088"
-p.cyan.g     = "#b8d4f0"
-p.blue.g     = "#d8bcff"
+p.magenta.g  = "#f0b4bc"
+p.red.g      = "#f08474"
+p.yellow.g   = "#e0c088"
+p.cyan.g     = "#b8d6dc"
+p.blue.g     = "#dabaf0"
 
 local CONSTANT = ""
 
