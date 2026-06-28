@@ -1,22 +1,23 @@
--- smooth
+-- glowingoceanfloor
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#2a3037"
+p.black.g    = "#202830"
 p.dgrey.g    = "#747a80"
-p.white.g    = "#e0d0c0"
+p.grey.g     = "#c0c8d0"
+p.white.g    = "#f0d8b8"
 
-p.dred.g     = "#483638"
-p.dyellow.g  = "#605838"
-p.dblue.g    = "#344450"
+p.dred.g     = "#3c2c30"
+p.dyellow.g  = "#504c30"
+p.dblue.g    = "#244050"
 
-p.magenta.g  = "#f0b4bc"
-p.red.g      = "#f08474"
-p.yellow.g   = "#e0c088"
-p.cyan.g     = "#b8d6dc"
-p.blue.g     = "#dabaf0"
+p.magenta.g  = "#ffb0c0"
+p.red.g      = "#ff8070"
+p.yellow.g   = "#e0c070"
+p.cyan.g     = "#b4d6e0"
+p.blue.g     = "#d8bcff"
 
 local CONSTANT = ""
 
@@ -24,13 +25,17 @@ c.apply {
   search     = p.dyellow, 
   visual     = p.dblue, 
   diagund    = p.dred,
+
   canvas     = p.black, 
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
   msgarea    = p.dgrey, 
   comment    = p.dgrey, 
+  curlineno  = p.grey, 
+
   normal     = p.white, 
-  curlineno  = p.white, 
+  matchparen = p.magenta, 
+  func       = p.magenta, 
   keyword    = p.red,
   variable   = p.yellow, 
   typeparam  = p.yellow,
@@ -38,8 +43,6 @@ c.apply {
   type       = p.cyan, 
   btype      = p.cyan, 
   constant   = p.cyan, 
-  matchparen = p.magenta, 
-  func       = p.magenta, 
   literal    = p.blue, 
   str        = p.blue, 
 }

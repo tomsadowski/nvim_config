@@ -113,21 +113,25 @@ M.apply = function(p)
       fg      = p.normal.g,
     },
     DiagnosticSignError = {
-      ctermfg = p.signcol.t, 
-      fg      = p.signcol.g,
+      ctermfg = p.normal.t, 
+      fg      = p.normal.g,
+      ctermbg = p.diagund.t, 
+      bg      = p.diagund.g,
     },
 
     DiagnosticHint = {
-      ctermfg = p.signcol.t,
-      fg      = p.signcol.g,
+      ctermfg = p.normal.t,
+      fg      = p.normal.g,
+      ctermbg = p.diagund.t, 
+      bg      = p.diagund.g,
     },
+    DiagnosticSignHint          = {link='DiagnosticHint'},
     DiagnosticVirtualLinesHint  = {link='NONE'},
     DiagnosticVirtualTextHint   = {link='NONE'},
     DiagnosticFloatingHint      = {
       ctermfg = p.normal.t, 
       fg      = p.normal.g,
     },
-    DiagnosticSignHint          = {link='DiagnosticHint'},
 
     EndOfBuffer = {
       ctermfg = p.msgarea.t, 
