@@ -1,26 +1,22 @@
--- derelictspaceship
+-- glowingoceanfloor
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#121820"
+p.black.g    = "#202830"
 p.dgrey.g    = "#747a80"
 p.grey.g     = "#c0c8d0"
-p.white.g    = "#d0b0a0"
-
-local CONSTANT = ""
+p.white.g    = "#e0c8b8"
 
 p.dred.g     = "#3c2c30"
 p.dyellow.g  = "#504c30"
 p.dblue.g    = "#244050"
 
-local CONSTANT = ""
-
-p.magenta.g  = "#ff88a8"
-p.red.g      = "#ff6060"
-p.yellow.g   = "#f0a060"
-p.cyan.g     = "#50a070"
+p.magenta.g  = "#f0b0b8"
+p.red.g      = "#ff8070"
+p.yellow.g   = "#e0b870"
+p.cyan.g     = "#b0d0c8"
 p.blue.g     = "#d8bcf0"
 
 local CONSTANT = ""
