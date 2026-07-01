@@ -1,4 +1,4 @@
--- glowingoceanfloor
+-- bulb
 
 require "treesitter"
 local c = require "color"
@@ -17,7 +17,7 @@ p.magenta.g  = "#f0b0b8"
 p.red.g      = "#ff8070"
 p.yellow.g   = "#e0b870"
 p.cyan.g     = "#b0d0c8"
-p.blue.g     = "#d8bcf0"
+p.dcyan.g    = "#d8bcf0"
 
 local CONSTANT = ""
 
@@ -43,6 +43,6 @@ c.apply {
   type       = p.cyan, 
   btype      = p.cyan, 
   constant   = p.cyan, 
-  literal    = p.blue, 
-  str        = p.blue, 
+  literal    = p.dcyan, 
+  str        = p.dcyan, 
 }
