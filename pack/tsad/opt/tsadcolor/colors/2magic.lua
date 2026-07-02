@@ -14,9 +14,9 @@ p.dyellow.g  = "#504c30"
 p.dblue.g    = "#244050"
 
 --p.magenta.g  = "#f0a0a8"
-p.magenta.g  = "#e090a0"
-p.red.g      = "#e07060"
-p.yellow.g   = "#c09850"
+p.magenta.g  = "#f090a0"
+p.red.g      = "#ff7060"
+p.yellow.g   = "#d0a050"
 p.cyan.g     = "#a0b8c8"
 p.dcyan.g    = "#b898e0"
 
