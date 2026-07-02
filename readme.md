@@ -9,5 +9,8 @@
 
 ## Colorschemes
 
+### magic
+![magic](pics/magic.png)
+
 ### glowingoceanfloor
 ![glowingoceanfloor](pics/glowingoceanfloor.png)
