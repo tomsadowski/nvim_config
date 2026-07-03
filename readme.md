@@ -11,15 +11,3 @@
 
 ### bluejordan
 ![bluejordan](pics/bluejordan.png)
-
-### yas
-![yas](pics/yas.png)
-
-### smoothnavy
-![smoothnavy](pics/smoothnavy.png)
-
-### magic
-![magic](pics/magic.png)
-
-### glowingoceanfloor
-![glowingoceanfloor](pics/glowingoceanfloor.png)
