@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### bluejordan
+![bluejordan](pics/bluejordan.png)
+
 ### yas
 ![yas](pics/yas.png)
 
