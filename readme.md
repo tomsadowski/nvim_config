@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### smoothnavy
+![smoothnavy](pics/smoothnavy.png)
+
 ### magic
 ![magic](pics/magic.png)
 
