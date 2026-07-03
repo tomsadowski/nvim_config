@@ -17,7 +17,7 @@ p.magenta.g  = "#cc989c"
 p.red.g      = "#d07060"
 p.yellow.g   = "#c09868"
 p.cyan.g     = "#98a4c8"
-p.dcyan.g    = "#7ca8a0"
+p.dcyan.g    = "#7cb098"
 
 local CONSTANT = ""
 
