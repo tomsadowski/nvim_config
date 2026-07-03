@@ -9,6 +9,9 @@
 
 ## Colorschemes
 
+### yas
+![yas](pics/yas.png)
+
 ### smoothnavy
 ![smoothnavy](pics/smoothnavy.png)
 
