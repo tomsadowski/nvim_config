@@ -5,8 +5,8 @@ local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#14202c"
-p.dgrey.g    = "#707880"
-p.white.g    = "#d0b8a8"
+p.dgrey.g    = "#607080"
+p.white.g    = "#c8b6a8"
 
 p.dred.g     = "#402028"
 p.dyellow.g  = "#403c28"
