@@ -41,7 +41,6 @@
 [
   (escape_sequence)
   (shebang)
-  (primitive_type)
   (lifetime)
   "!"
   "!="
@@ -107,6 +106,7 @@
 (boolean_literal) @boolean
 (integer_literal) @number
 (float_literal) @number.float
+(primitive_type) @type
 
 
 ; identifier
