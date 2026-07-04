@@ -28,6 +28,7 @@
 --  - To opt out of this use |gw| instead of gq, or clear 'formatexpr' on |LspAttach|.
 --- |K| is mapped to |vim.lsp.buf.hover()| unless |'keywordprg'| is customized or
 --  a custom keymap for `K` exists.
+--
 
 vim.cmd "packadd! tsadlsp"
 require "tsad_lsp_settings"
