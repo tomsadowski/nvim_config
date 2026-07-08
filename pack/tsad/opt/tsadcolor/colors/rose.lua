@@ -12,11 +12,11 @@ p.dred.g     = "#402028"
 p.dyellow.g  = "#403c28"
 p.dblue.g    = "#183040"
 
-p.magenta.g  = "#b888b8"
+p.magenta.g  = "#b88ca4"
 p.red.g      = "#c06060"
 p.yellow.g   = "#a8a048"
 p.cyan.g     = "#68a8a0"
-p.dcyan.g    = "#9098d0"
+p.dcyan.g    = "#9696d0"
 
 local CONSTANT = ""
 
