@@ -9,5 +9,8 @@
 
 ## Colorschemes
 
+### longshoreman
+![longshoreman](pics/longshoreman.png)
+
 ### jordan
 ![jordan](pics/jordan.png)
