@@ -1,4 +1,4 @@
--- OSHA
+-- beam
 
 require "treesitter"
 local c = require "color"
@@ -8,15 +8,15 @@ p.black.g    = "#202020"
 p.dgrey.g    = "#707070"
 p.white.g    = "#c8c8c8"
 
-p.dred.g     = "#40202c"
-p.dyellow.g  = "#403c20"
-p.dblue.g    = "#20403c"
+p.dred.g     = "#402028"
+p.dyellow.g  = "#403c28"
+p.dblue.g    = "#183040"
 
-p.magenta.g  = "#f0a0c0"
+p.magenta.g  = "#f098c0"
 p.red.g      = "#f0685c"
 p.yellow.g   = "#e0c068"
-p.cyan.g     = "#a8b0ff"
-p.dcyan.g    = "#70d0c0"
+p.cyan.g     = "#90b0ff"
+p.dcyan.g    = "#60d0c0"
 
 local CONSTANT = ""
 
