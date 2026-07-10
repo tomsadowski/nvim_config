@@ -4,19 +4,19 @@ require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#202020"
-p.dgrey.g    = "#707070"
-p.white.g    = "#c8c8c8"
+p.black.g    = "#26282c"
+p.dgrey.g    = "#707478"
+p.white.g    = "#d8d0cc"
 
-p.dred.g     = "#40202c"
-p.dyellow.g  = "#403c20"
-p.dblue.g    = "#20403c"
+p.dred.g     = "#402830"
+p.dyellow.g  = "#444028"
+p.dblue.g    = "#28403c"
 
 p.magenta.g  = "#f0a0c0"
-p.red.g      = "#ff685c"
-p.yellow.g   = "#e0c068"
-p.dcyan.g    = "#68e0c0"
-p.cyan.g     = "#a8b0ff"
+p.red.g      = "#ff7a68"
+p.yellow.g   = "#e0b068"
+p.cyan.g     = "#70d0b0"
+p.dcyan.g    = "#98b8ff"
 
 local CONSTANT = ""
 
@@ -38,10 +38,10 @@ c.apply {
   keyword    = p.red,
   variable   = p.yellow, 
   typeparam  = p.yellow,
-  item       = p.dcyan, 
-  type       = p.dcyan, 
-  btype      = p.dcyan, 
-  constant   = p.dcyan, 
-  literal    = p.cyan, 
-  str        = p.cyan, 
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
+  literal    = p.dcyan, 
+  str        = p.dcyan, 
 }
