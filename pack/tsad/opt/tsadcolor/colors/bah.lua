@@ -12,9 +12,12 @@ p.dred.g     = "#101010"
 p.dyellow.g  = "#302c08"
 p.dblue.g    = "#081830"
 
+p.magenta.g  = "#ffa8bc"
+p.yellow.g   = "#e0b068"
 
 p.red.g      = "#ff7060"
-p.dcyan.g    = "#e098a0"
+p.cyan.g     = "#d0a850"
+p.dcyan.g    = "#80a8ff"
 
 local CONSTANT = ""
 
@@ -36,10 +39,10 @@ c.apply {
   keyword    = p.red,
   variable   = p.white, 
   typeparam  = p.white,
-  item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
   literal    = p.dcyan, 
   str        = p.dcyan, 
 }
