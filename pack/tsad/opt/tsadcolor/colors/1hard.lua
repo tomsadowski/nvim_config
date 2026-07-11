@@ -1,4 +1,4 @@
--- bluejay
+-- hard
 
 require "treesitter"
 local c = require "color"
@@ -8,19 +8,19 @@ p.black.g    = "#16181c"
 p.dgrey.g    = "#707880"
 p.white.g    = "#d0c8bc"
 
-p.dmagenta.g = "#301820"
-p.dyellow.g  = "#302c1c"
-p.dblue.g    = "#162c30"
+p.dred.g     = "#16181c"
+p.dyellow.g  = "#302c2a"
+p.dblue.g    = "#2a2c30"
 
-p.yellow.g   = "#d0a060"
-p.cyan.g     = "#80a0d0"
+p.yellow.g   = "#ff8000"
+p.cyan.g     = "#e088b8"
 
 local CONSTANT = ""
 
 c.apply {
   search     = p.dyellow, 
   visual     = p.dblue, 
-  diagund    = p.dmagenta,
+  diagund    = p.dred,
 
   keyword    = p.yellow,
   literal    = p.cyan, 
