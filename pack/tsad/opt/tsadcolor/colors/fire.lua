@@ -1,4 +1,4 @@
--- OSHA
+-- fire
 
 require "treesitter"
 local c = require "color"
@@ -15,7 +15,7 @@ p.dblue.g    = "#28403c"
 p.magenta.g  = "#f0a0c0"
 p.red.g      = "#ff7a68"
 p.yellow.g   = "#e0b068"
-p.cyan.g     = "#70d0b0"
+p.cyan.g     = "#78d0b8"
 p.dcyan.g    = "#98b8ff"
 
 local CONSTANT = ""

@@ -1,46 +1,47 @@
--- bluejay
+-- fire
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#26282c"
-p.dgrey.g    = "#707880"
-p.white.g    = "#d0c8bc"
+p.dgrey.g    = "#707478"
+p.white.g    = "#d8d0cc"
 
-p.dmagenta.g = "#384048"
-p.dyellow.g  = "#48442c"
-p.dblue.g    = "#264448"
+p.dred.g     = "#402830"
+p.dyellow.g  = "#444028"
+p.dblue.g    = "#28403c"
 
-p.yellow.g   = "#ffa060"
-p.cyan.g     = "#90b0ff"
+p.magenta.g  = "#f0a0c0"
+p.red.g      = "#ff7a68"
+p.yellow.g   = "#e0b068"
+p.cyan.g     = "#78d0b8"
+p.dcyan.g    = "#98b8ff"
 
 local CONSTANT = ""
 
 c.apply {
   search     = p.dyellow, 
   visual     = p.dblue, 
-  diagund    = p.dmagenta,
-
-  keyword    = p.yellow,
-  literal    = p.cyan, 
-  str        = p.cyan, 
+  diagund    = p.dred,
 
   canvas     = p.black, 
-
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
   msgarea    = p.dgrey, 
   comment    = p.dgrey, 
-
   curlineno  = p.white, 
+
   normal     = p.white, 
-  matchparen = p.white, 
-  func       = p.white, 
-  variable   = p.white, 
-  typeparam  = p.white,
-  item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+  matchparen = p.magenta, 
+  func       = p.magenta, 
+  keyword    = p.red,
+  variable   = p.yellow, 
+  typeparam  = p.yellow,
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
+  literal    = p.dcyan, 
+  str        = p.dcyan, 
 }
