@@ -11,3 +11,4 @@
 
 ### fire (fselect source code)
 ![fire](pics/fire_fselect_source.png)
+![fire2](pics/fire_fselect_2.png)
