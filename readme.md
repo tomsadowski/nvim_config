@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### fire
-![fire](pics/fire.png)
+### fire (fselect source code)
+![fire](pics/fire_fselect_source.png)

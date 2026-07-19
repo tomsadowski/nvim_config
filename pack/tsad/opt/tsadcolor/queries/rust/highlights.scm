@@ -155,8 +155,10 @@
   (reference_expression value: (identifier) @variable.parameter))
 
 (match_pattern (identifier) @variable)
+(or_pattern (identifier) @type (#match? @type "^[A-Z]"))
 (match_pattern 
   (scoped_identifier name: (identifier) @type))  
+;(match_pattern (identifier) @type (#match? @type "^[A-Z]"))
 
 (tuple_struct_pattern type: (identifier) @type)
 (tuple_struct_pattern   
