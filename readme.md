@@ -9,7 +9,5 @@
 
 ## Colorschemes
 
-### fire (fselect source code)
-![fire](pics/fire_fselect_source.png)
-![fire2](pics/fire_fselect_2.png)
-![fire3](pics/fire_fselect_3.png)
+### fire
+![fire](pics/fire_gbrowse.png)
