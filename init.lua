@@ -30,24 +30,10 @@
 --  a custom keymap for `K` exists.
 --
 
-vim.cmd "packadd! tsadlsp"
 require "tsad_lsp_settings"
 
-vim.cmd "packadd! pearbear"
-require "pearbear_keymaps"
+require "tsad_keymaps"
 
-require "settings"
+require "tsad_settings"
 
--- uncomment this once vim.pack is in the stable release
---
---vim.pack.add({
---  { 
---    src = 'https://github.com/tomsadowski/tsad_nvim_colorschemes',
---    name = 'tsad_colorschemes',
---    version = 'main',
---  },
---})
---require "tsad_colorschemes"
-
-vim.cmd "packadd! tsadcolor"
 vim.cmd "colo current"
