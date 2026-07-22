@@ -1,4 +1,4 @@
--- clear
+-- lavender
 
 require "treesitter"
 local c = require "color"
