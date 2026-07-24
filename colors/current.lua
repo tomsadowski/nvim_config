@@ -6,7 +6,7 @@ local p = vim.deepcopy(c.palette)
 
 p.grey.g = "#a0a0a0"
 
-p.magenta.g = "#ff80ff"
+p.magenta.g = "#ffc0ff"
 
 p.dmagenta.g = "#c00090"
 p.red.g      = "#d04000"
