@@ -1,4 +1,4 @@
--- mist
+-- royal
 
 require "treesitter"
 local c = require "color"
@@ -8,12 +8,12 @@ p.black.g    = "#2c3040"
 p.dgrey.g    = "#707488"
 p.white.g    = "#d8d0cc"
 
-p.dred.g     = "#402830"
-p.dyellow.g  = "#444028"
-p.dblue.g    = "#28403c"
+p.dred.g     = "#483040"
+p.dyellow.g  = "#605040"
+p.dblue.g    = "#303c60"
 
 p.magenta.g  = "#e09cc8"
-p.red.g      = "#ff7870"
+p.red.g      = "#ff706c"
 p.yellow.g   = "#f0b080"
 p.cyan.g     = "#80d0b0"
 p.dcyan.g    = "#acacff"

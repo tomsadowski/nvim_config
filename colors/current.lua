@@ -1,43 +1,47 @@
--- white
+-- ship
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.grey.g = "#a0a0a0"
+p.black.g    = "#222830"
+p.dgrey.g    = "#707888"
+p.white.g    = "#d0ccc6"
 
-p.magenta.g = "#ffc0ff"
+p.dred.g     = "#402830"
+p.dyellow.g  = "#484030"
+p.dblue.g    = "#283850"
 
-p.dmagenta.g = "#c00090"
-p.red.g      = "#d04000"
-p.dgreen.g   = "#406800"
-p.dcyan.g    = "#0068a0"
-p.blue.g     = "#6000f0"
+p.magenta.g  = "#e89ac0"
+p.red.g      = "#ff706a"
+p.yellow.g   = "#e8ac70"
+p.cyan.g     = "#70c0a0"
+p.dcyan.g    = "#acb0ff"
 
 local CONSTANT = ""
 
 c.apply {
-  search     = p.yellow, 
-  visual     = p.cyan, 
-  diagund    = p.magenta,
+  search     = p.dyellow, 
+  visual     = p.dblue, 
+  diagund    = p.dred,
 
-  canvas     = p.white, 
-  signcol    = p.grey, 
-  lineno     = p.grey, 
-  msgarea    = p.grey, 
-  comment    = p.grey, 
-  curlineno  = p.black, 
+  canvas     = p.black, 
+  signcol    = p.dgrey, 
+  lineno     = p.dgrey, 
+  msgarea    = p.dgrey, 
+  comment    = p.dgrey, 
+  curlineno  = p.white, 
 
-  normal     = p.black, 
-  matchparen = p.dmagenta, 
-  func       = p.dmagenta, 
+  normal     = p.white, 
+  matchparen = p.magenta, 
+  func       = p.magenta, 
   keyword    = p.red,
-  variable   = p.dgreen, 
-  typeparam  = p.dgreen,
-  item       = p.dcyan, 
-  type       = p.dcyan, 
-  btype      = p.dcyan, 
-  constant   = p.dcyan, 
-  literal    = p.blue, 
-  str        = p.blue, 
+  variable   = p.yellow, 
+  typeparam  = p.yellow,
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
+  literal    = p.dcyan, 
+  str        = p.dcyan, 
 }
