@@ -30,10 +30,10 @@
 --  a custom keymap for `K` exists.
 --
 
-require "tsad_lsp_settings"
+require "lsp-settings"
 
-require "tsad_keymaps"
+require "keymaps"
 
-require "tsad_settings"
+require "settings"
 
 vim.cmd "colo current"

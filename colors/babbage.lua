@@ -1,4 +1,4 @@
--- coral
+-- babbage
 
 require "treesitter"
 local c = require "color"
@@ -12,11 +12,11 @@ p.dred.g     = "#402830"
 p.dyellow.g  = "#484030"
 p.dblue.g    = "#283850"
 
-p.magenta.g  = "#d0a0d0"
-p.red.g      = "#f06868"
-p.yellow.g   = "#d0ac70"
+p.magenta.g  = "#e89ac0"
+p.red.g      = "#ff6058"
+p.yellow.g   = "#e0b068"
 p.cyan.g     = "#50c0a0"
-p.dcyan.g    = "#80b0ff"
+p.dcyan.g    = "#80a0ff"
 
 local CONSTANT = ""
 

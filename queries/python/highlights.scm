@@ -6,10 +6,6 @@
   attribute: (identifier))
 
 
-
-;((identifier) @constructor
-; (#match? @constructor "^[A-Z]"))
-
 ((identifier) @constant
  (#match? @constant "^[A-Z][A-Z_]*$"))
 
@@ -25,9 +21,6 @@
 (decorator
   (identifier) @function)
 
-((call
-  function: (attribute attribute: (identifier) @function.method))
- (#set! priority 105))
 (call
   function: (identifier) @function)
 
@@ -46,6 +39,10 @@
 
 (attribute attribute: (identifier) @property)
 (type (identifier) @type)
+((call
+  function: (attribute attribute: (identifier) @function.method))
+; (#set! priority 105)
+ )
 
 ; Literals
 
@@ -181,3 +178,7 @@
     object: (identifier) @variable) ; [168, 24] - [168, 28]
   arguments: (argument_list)) ; [168, 49] - [168, 51]
 
+
+((identifier) @type (#match? @type "^[A-Z]"))
+
+(dotted_name (identifier) @normal (identifier))
