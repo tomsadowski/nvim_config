@@ -1,4 +1,4 @@
--- seaweed
+-- coral
 
 require "treesitter"
 local c = require "color"
@@ -12,9 +12,9 @@ p.dred.g     = "#402830"
 p.dyellow.g  = "#484030"
 p.dblue.g    = "#283850"
 
-p.magenta.g  = "#d090b8"
+p.magenta.g  = "#e898c4"
 p.red.g      = "#f06868"
-p.yellow.g   = "#c0b070"
+p.yellow.g   = "#d0ac70"
 p.cyan.g     = "#50b0a0"
 p.dcyan.g    = "#80acff"
 
