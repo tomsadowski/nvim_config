@@ -1,12 +1,11 @@
--- sky
+-- chartreuse
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#222830"
-p.dgrey.g    = "#607088"
-p.dcyan.g    = "#a0b0c6"
+p.dgrey.g    = "#707888"
 p.white.g    = "#d0ccc6"
 
 p.dred.g     = "#402830"
@@ -14,9 +13,10 @@ p.dyellow.g  = "#484030"
 p.dblue.g    = "#283850"
 
 p.magenta.g  = "#c890b8"
-p.red.g      = "#d0a060"
-p.yellow.g   = "#80b0f0"
-p.cyan.g     = "#70c0b0"
+p.red.g      = "#f08840"
+p.yellow.g   = "#b0c040"
+p.cyan.g     = "#30c0a8"
+p.dcyan.g    = "#80acf0"
 
 local CONSTANT = ""
 
@@ -36,12 +36,12 @@ c.apply {
   matchparen = p.magenta, 
   func       = p.magenta, 
   keyword    = p.red,
-  variable   = p.dcyan, 
-  typeparam  = p.cyan,
+  variable   = p.yellow, 
+  typeparam  = p.yellow,
   item       = p.cyan, 
   type       = p.cyan, 
   btype      = p.cyan, 
   constant   = p.cyan, 
-  literal    = p.yellow, 
-  str        = p.yellow, 
+  literal    = p.dcyan, 
+  str        = p.dcyan, 
 }
