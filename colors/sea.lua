@@ -1,22 +1,22 @@
--- babbage
+-- sea
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#222830"
-p.dgrey.g    = "#707888"
-p.white.g    = "#d0ccc6"
+p.dgrey.g    = "#506880"
+p.grey.g     = "#b0c0d0"
+p.white.g    = "#f0d8c0"
 
 p.dred.g     = "#402830"
-p.dyellow.g  = "#484030"
+p.dyellow.g  = "#444830"
 p.dblue.g    = "#283850"
 
-p.magenta.g  = "#e89ac0"
-p.red.g      = "#ff6058"
-p.yellow.g   = "#e0b068"
-p.cyan.g     = "#50c0a0"
-p.dcyan.g    = "#80a0ff"
+p.magenta.g  = "#ffa0d0"
+p.yellow.g   = "#c0d060"
+p.dcyan.g    = "#b09cff"
+p.cyan.g     = "#20d0c8"
 
 local CONSTANT = ""
 
@@ -30,18 +30,18 @@ c.apply {
   lineno     = p.dgrey, 
   msgarea    = p.dgrey, 
   comment    = p.dgrey, 
-  curlineno  = p.white, 
+  curlineno  = p.grey, 
 
-  normal     = p.white, 
+  normal     = p.grey, 
+  variable   = p.white, 
+  keyword    = p.cyan,
   matchparen = p.magenta, 
   func       = p.magenta, 
-  keyword    = p.red,
-  variable   = p.yellow, 
   typeparam  = p.yellow,
-  item       = p.cyan, 
-  type       = p.cyan, 
-  btype      = p.cyan, 
-  constant   = p.cyan, 
+  item       = p.yellow, 
+  type       = p.yellow, 
+  btype      = p.yellow, 
+  constant   = p.yellow, 
   literal    = p.dcyan, 
   str        = p.dcyan, 
 }
