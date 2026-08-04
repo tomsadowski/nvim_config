@@ -1,4 +1,4 @@
--- sea
+-- dragon
 
 require "treesitter"
 local c = require "color"
@@ -15,8 +15,8 @@ p.dblue.g    = "#283850"
 
 p.magenta.g  = "#f0a8c8"
 p.yellow.g   = "#b8d060"
-p.dcyan.g    = "#a8a4ff"
-p.cyan.g     = "#20d0c8"
+p.dcyan.g    = "#a8a4f0"
+p.cyan.g     = "#60d0c0"
 
 local CONSTANT = ""
 
@@ -34,14 +34,14 @@ c.apply {
 
   normal     = p.grey, 
   variable   = p.white, 
-  keyword    = p.cyan,
+  keyword    = p.grey,
   matchparen = p.magenta, 
   func       = p.magenta, 
-  typeparam  = p.yellow,
-  item       = p.yellow, 
-  type       = p.yellow, 
-  btype      = p.yellow, 
-  constant   = p.yellow, 
+  typeparam  = p.cyan,
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
   literal    = p.dcyan, 
   str        = p.dcyan, 
 }
