@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### fire
-![fire](pics/fire_gbrowse.png)
+### sea
+![sea](pics/sea.png)
