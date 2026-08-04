@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### sea
-![sea](pics/sea.png)
+### dragon
+![dragon](pics/dragon.png)
