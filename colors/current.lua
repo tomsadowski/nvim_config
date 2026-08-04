@@ -16,7 +16,7 @@ p.dblue.g    = "#283850"
 p.magenta.g  = "#f0a8c8"
 p.yellow.g   = "#b8d060"
 p.dcyan.g    = "#a8a4f0"
-p.cyan.g     = "#60c0b6"
+p.cyan.g     = "#70c0b0"
 
 local CONSTANT = ""
 
@@ -37,11 +37,11 @@ c.apply {
   keyword    = p.grey,
   matchparen = p.magenta, 
   func       = p.magenta, 
-  typeparam  = p.yellow,
-  item       = p.yellow, 
-  type       = p.yellow, 
-  btype      = p.yellow, 
-  constant   = p.yellow, 
+  typeparam  = p.cyan,
+  item       = p.cyan, 
+  type       = p.cyan, 
+  btype      = p.cyan, 
+  constant   = p.cyan, 
   literal    = p.dcyan, 
   str        = p.dcyan, 
 }
