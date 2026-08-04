@@ -13,7 +13,7 @@ p.dred.g     = "#402830"
 p.dyellow.g  = "#444830"
 p.dblue.g    = "#283850"
 
-p.magenta.g  = "#f0a8c0"
+p.magenta.g  = "#f0a8c8"
 p.yellow.g   = "#78d0b0"
 p.dcyan.g    = "#aca4ff"
 p.cyan.g     = "#70c0ff"
