@@ -2,6 +2,10 @@
 
 ((identifier) @constant
  (#match? @constant "^[A-Z][A-Z\\d_]*$"))
+[
+ (true)
+ (false)
+ ] @boolean
 
 "break" @keyword
 "case" @keyword
@@ -65,7 +69,7 @@
 (field_identifier) @property
 (statement_identifier) @label
 (type_identifier) @type
-(primitive_type) @keyword
+(primitive_type) @type.builtin
 (sized_type_specifier) @type
 
 (call_expression
