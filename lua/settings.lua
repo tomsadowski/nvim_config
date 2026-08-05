@@ -1,9 +1,10 @@
--- SETTINGS
+-- settings.lua
 
 -- search
 -- Case-insensitive searching UNLESS \C or one or more 
 -- capital letters in the search term
---vim.o.ignorecase = true
+
+vim.o.ignorecase = false
 vim.o.smartcase = true
 
 -- split
@@ -15,8 +16,8 @@ vim.o.wrap = true
 
 -- tab
 vim.o.expandtab = true
-vim.o.shiftwidth=2
-vim.o.tabstop=2
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
 
 -- perimeter
 vim.o.number = true   

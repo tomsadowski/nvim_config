@@ -1,3 +1,5 @@
+-- color.lua
+
 local M = {}
 
 M.palette = {
@@ -749,12 +751,15 @@ M.apply = function(p)
       client.server_capabilities.semanticTokensProvider = nil
     end
   })
+
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
     vim.api.nvim_set_hl(0, group, {})
   end
+
   for k, v in pairs(hl_groups) do
     vim.api.nvim_set_hl(0, k, v)
   end
+
 end
 
 return M
