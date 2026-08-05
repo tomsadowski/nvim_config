@@ -1,14 +1,18 @@
 ; Keywords
 "return" @keyword.return
 
-(dot_index_expression
-  table: (identifier) @path (#set! priority 101))
+
+; (dot_index_expression
+;   table: (dot_index_expression
+;     table: (identifier)
+;     field: (identifier)
+;   )
+;   field: (identifier)
+; )
 
 (dot_index_expression
-  table: (dot_index_expression) @path (#set! priority 101))
-
-(dot_index_expression
-  field: (identifier) @variable)
+  field: (identifier) @variable
+)
 
 [
   "goto"
@@ -29,16 +33,16 @@
     "while"
     "do"
     "end"
-  ] @keyword.repeat)
+  ] @keyword)
 
 (repeat_statement
   [
     "repeat"
     "until"
-  ] @keyword.repeat)
+  ] @keyword)
 
 (field 
-  name: (identifier) @path) 
+  name: (identifier) @variable) 
 
 (if_statement
   [
@@ -67,19 +71,19 @@
     "for"
     "do"
     "end"
-  ] @keyword.repeat)
+  ] @keyword)
 
 (function_declaration
   [
     "function"
     "end"
-  ] @keyword.function)
+  ] @keyword)
 
 (function_definition
   [
     "function"
     "end"
-  ] @keyword.function)
+  ] @keyword)
 
 ; Operators
 [
@@ -264,3 +268,24 @@
     .
     (string
       content: (string_content) @string.regexp)))
+
+(dot_index_expression
+  table: (identifier) @normal (#set! priority 100)
+  field: (identifier) @variable
+)
+
+(dot_index_expression
+  table: (dot_index_expression) @normal (#set! priority 101)
+  field: (identifier) @variable
+)
+
+(variable_list 
+  name: (identifier) @variable
+)
+
+(arguments 
+  (identifier) @variable
+)
+
+((identifier) @constant
+  (#lua-match? @constant "^[A-Z][A-Z_0-9]*$"))
