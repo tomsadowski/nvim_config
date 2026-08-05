@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### dragon
-![dragon](pics/dragon.png)
+### moon
+![moon](pics/moon.png)
