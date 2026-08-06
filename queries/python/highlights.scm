@@ -39,10 +39,7 @@
 
 (attribute attribute: (identifier) @property)
 (type (identifier) @type)
-((call
-  function: (attribute attribute: (identifier) @function.method))
-; (#set! priority 105)
- )
+(call function: (attribute attribute: (identifier) @function.method))
 
 ; Literals
 
@@ -147,36 +144,47 @@
 
 (subscript 
   value: (identifier)
-  subscript: (identifier) @param (#set! priority 105))
+  subscript: (identifier) @param (#set! priority 105)
+)
 
 (subscript
   value: (attribute
     object: (attribute
       object: (identifier)
-      attribute: (identifier)) @normal; (#set! priority 105)
-    attribute: (identifier))
- subscript: (attribute
-   object: (identifier)
-   attribute: (identifier)))
+      attribute: (identifier)
+    ) @normal
+    attribute: (identifier)
+  )
+  subscript: (attribute
+    object: (identifier)
+    attribute: (identifier)
+  )
+)
 
 (attribute
   object: (attribute
     object: (identifier) 
-    attribute: (identifier) @normal ;(#set! priority 105)
-    ))
+    attribute: (identifier) @normal
+  )
+)
 
-(call ; [168, 24] - [168, 51]
-  function: (attribute ; [168, 24] - [168, 49]
-    object: (attribute ; [168, 24] - [168, 42]
-      object: (identifier) ; [168, 24] - [168, 28]
-      attribute: (identifier) @variable (#set! priority 105))
-    attribute: (identifier)) ; [168, 43] - [168, 49]
-  arguments: (argument_list)) ; [168, 49] - [168, 51]
+(call
+  function: (attribute
+    object: (attribute
+      object: (identifier)
+      attribute: (identifier) @variable (#set! priority 105)
+    )
+    attribute: (identifier)
+  )
+  arguments: (argument_list)
+)
 
-(call ; [168, 24] - [168, 51]
-  function: (attribute ; [168, 24] - [168, 49]
-    object: (identifier) @variable) ; [168, 24] - [168, 28]
-  arguments: (argument_list)) ; [168, 49] - [168, 51]
+(call
+  function: (attribute
+    object: (identifier) @variable
+  )
+  arguments: (argument_list)
+)
 
 
 ((identifier) @type (#match? @type "^[A-Z]"))
