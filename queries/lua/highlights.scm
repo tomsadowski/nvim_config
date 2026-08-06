@@ -265,7 +265,7 @@
 
 
 (dot_index_expression
-  table: (identifier) @normal (#set! priority 100)
+  table: (identifier) @normal
   field: (identifier) @variable
 )
 
@@ -274,6 +274,20 @@
     field: (identifier) @normal (#set! priority 101)
   ) 
 )
+
+(function_call 
+  (dot_index_expression
+    (dot_index_expression
+      field: (identifier) @variable (#set! priority 101)
+    ) 
+  )
+)
+
+(function_call 
+  (dot_index_expression
+    table: (identifier) @variable
+    field: (identifier) @function.call (#set! priority 101)
+))
 
 (variable_list 
   name: (identifier) @variable
@@ -285,8 +299,3 @@
 
 ((identifier) @constant
   (#lua-match? @constant "^[A-Z][A-Z_0-9]*$"))
-
-(function_call 
-  (dot_index_expression
-    field: (identifier) @function.call (#set! priority 101)
-))
