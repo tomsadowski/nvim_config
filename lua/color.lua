@@ -745,12 +745,15 @@ M.apply = function(p)
   vim.cmd("syntax clear")
   vim.cmd("highlight clear")
 
-  vim.api.nvim_create_autocmd('LspAttach', {
-    callback = function(args)
-      local client = vim.lsp.get_client_by_id(args.data.client_id)
-      client.server_capabilities.semanticTokensProvider = nil
-    end
-  })
+  vim.api.nvim_create_autocmd(
+    'LspAttach', 
+    {
+      callback = function(args)
+        local client = vim.lsp.get_client_by_id(args.data.client_id)
+        client.server_capabilities.semanticTokensProvider = nil
+      end
+    }
+  )
 
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
     vim.api.nvim_set_hl(0, group, {})

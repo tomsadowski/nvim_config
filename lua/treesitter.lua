@@ -1,4 +1,4 @@
--- TREESITTER ----------------------------------------------------
+-- treesitter.lua
 
 vim.api.nvim_create_autocmd(
   {

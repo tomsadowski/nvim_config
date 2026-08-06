@@ -17,7 +17,8 @@ vim.api.nvim_create_autocmd(
       '*.HPP',
     },
     callback = function(args) 
-      vim.lsp.start({
+      vim.lsp.start(
+        {
           name     = 'clang-lsp',
           cmd      = {'clangd'},
           root_dir = vim.fs.root(

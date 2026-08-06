@@ -1,11 +1,11 @@
--- sea
+-- moon
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#222830"
-p.dgrey.g    = "#506880"
+p.dgrey.g    = "#586c80"
 p.grey.g     = "#b0c0d0"
 p.white.g    = "#ecd8c8"
 
