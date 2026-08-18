@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### moon
-![moon](pics/moon.png)
+### luma
+![luma](pics/luma.png)
