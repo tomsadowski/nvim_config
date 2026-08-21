@@ -1,22 +1,22 @@
--- calm
+-- malabas
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#22262c"
-p.dgrey.g    = "#687078"
-p.grey.g     = "#a8acb0"
-p.white.g    = "#c8b0a0"
+p.black.g    = "#202020"
+p.dgrey.g    = "#606060"
+p.grey.g     = "#b0b0b0"
+p.white.g    = "#ffffff"
 
 p.dred.g     = "#402830"
 p.dyellow.g  = "#403c30"
-p.dblue.g    = "#303840"
+p.dblue.g    = "#303030"
 
-p.magenta.g  = "#d0a0c0"
-p.red.g      = "#d0806c"
-p.green.g    = "#70b0a8"
-p.cyan.g     = "#a8a0f0"
+p.magenta.g  = "#e8b0e0"
+p.green.g    = "#90d060"
+p.red.g      = "#ff7870"
+p.cyan.g     = "#80c0ff"
 
 local CONSTANT = ""
 
