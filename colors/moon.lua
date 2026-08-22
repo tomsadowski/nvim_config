@@ -1,4 +1,4 @@
--- luma
+-- moon
 
 require "treesitter"
 local c = require "color"
@@ -32,10 +32,10 @@ c.apply {
   comment    = p.dgrey, 
   curlineno  = p.grey, 
 
-  import     = p.grey,
-  trunk      = p.grey,
-  path       = p.grey, 
-  variant    = p.grey, 
+  import     = p.white,
+  trunk      = p.white,
+  path       = p.white, 
+  variant    = p.white, 
 
   normal     = p.grey, 
   variable   = p.white, 

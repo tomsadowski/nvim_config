@@ -1,4 +1,4 @@
--- gordon
+-- snake
 
 require "treesitter"
 local c = require "color"
@@ -14,7 +14,7 @@ p.dyellow.g  = "#403c30"
 p.dblue.g    = "#303030"
 
 p.magenta.g  = "#e8b0e0"
-p.green.g    = "#90d060"
+p.green.g    = "#b0d060"
 p.red.g      = "#ff7870"
 p.cyan.g     = "#80c0ff"
 
