@@ -135,10 +135,10 @@
 (match_arm                    (identifier) @variable)
 (block                        (identifier) @variable)
 (lifetime                     (identifier) @variable)
-(scoped_type_identifier path: (identifier) @path)
-(enum_variant           name: (identifier) @variant)
+(scoped_type_identifier path: (identifier) @normal)
+(enum_variant           name: (identifier) @normal)
 
-(scoped_identifier path: (identifier) @path)
+(scoped_identifier path: (identifier) @normal)
 (scoped_identifier name: (identifier) @type)
 
 (for_expression      pattern: (identifier) @variable)
@@ -214,7 +214,7 @@
   (attribute 
     (identifier) @normal))
 
-(field_expression value: (identifier) @trunk)
+(field_expression value: (identifier) @normal)
 
 (generic_function (identifier) @function)
 (generic_function 
@@ -230,11 +230,11 @@
 
 path: (scoped_identifier 
   path: (identifier) 
-  name: (identifier) @path)
+  name: (identifier) @normal)
 
 (scoped_identifier      
   (scoped_identifier 
-    name: (identifier) @path))
+    name: (identifier) @normal))
 
 
 function: (identifier) @type     (#match? @type "^[A-Z]")
@@ -242,7 +242,7 @@ function: (identifier) @function (#match? @function "^[a-z]")
 
 function: (scoped_identifier      
   (scoped_identifier 
-    name: (identifier) @path))
+    name: (identifier) @normal))
 
 function: (scoped_identifier
   path: (identifier)
@@ -268,34 +268,33 @@ function: (scoped_identifier
 (call_expression 
   function: (field_expression 
     value: (identifier) @variable))
+;(call_expression 
+;  function: (scoped_identifier 
+;    name: (identifier) @type))
 
 (mut_pattern 
   (mutable_specifier)
   (identifier) @variable)
 
-(use_list (identifier) @import)
+(use_list (identifier) @type)
 (use_list 
   (scoped_identifier
-    path: (identifier) @path
-    name: (identifier) @import) (#set! priority 105))
-
-path: (crate) @path
-
-(use_wildcard (identifier) @path)
+    path: (identifier) @normal
+    name: (identifier) @type) (#set! priority 105))
 
 (use_declaration      
   argument: (scoped_identifier 
-    path: (identifier) @path (#set! priority 105)
-    name: (identifier) @import)) (#set! priority 105)
+    path: (identifier) @normal (#set! priority 105)
+    name: (identifier) @type)) (#set! priority 105)
 (use_declaration      
   argument: (scoped_identifier 
-    name: (identifier) @import)) (#set! priority 105)
+    name: (identifier) @type)) (#set! priority 105)
 
 ((scoped_use_list) 
-  path: (identifier) @path (#set! priority 105))
+  path: (identifier) @normal (#set! priority 105))
 (scoped_use_list      
   path: (scoped_identifier 
-    name: (identifier) @path)) (#set! priority 105)
+    name: (identifier) @normal)) (#set! priority 105)
 
 ((identifier) @constant (#match? @constant "^[A-Z][A-Z_]*$"))
 ((identifier) @type     (#any-of? @type "Some" "None" "Ok" "Err"))
@@ -340,14 +339,14 @@ path: (crate) @path
 
 ; field_identifier
 (field_identifier) @variable
-(field_pattern     name: (field_identifier) @trunk)
+(field_pattern     name: (field_identifier) @normal)
 (field_declaration name: (field_identifier) @variable.member.declaration)
 (field_initializer       (field_identifier) @variable)
 
 (field_expression field: (field_identifier) @variable.member)
 (field_expression      
   value: (field_expression      
-    field: (field_identifier) @trunk))
+    field: (field_identifier) @normal))
 
 (index_expression 
   (field_expression
@@ -371,8 +370,8 @@ function: (field_expression ; [57, 16] - [57, 23]
 
 ; self
 (self)                          @variable.builtin
-(use_list                (self) @import (#set! priority 105))
-(field_expression value: (self) @trunk)
+(use_list                (self) @type (#set! priority 105))
+(field_expression value: (self) @normal)
 (call_expression 
   function: (field_expression   
     value: (self) @variable))
@@ -382,7 +381,7 @@ function: (field_expression ; [57, 16] - [57, 23]
 (metavariable) @function.macro
 (macro_definition "macro_rules!" @function.macro)
 (ordered_field_declaration_list type: (generic_type) @type)
-(scoped_type_identifier         path: (scoped_identifier) @path (#set! priority 105))
+(scoped_type_identifier         path: (scoped_identifier) @normal (#set! priority 105))
 "$" @function.macro
 (macro_invocation "!" @function)
 (closure_parameters (_) @variable.parameter)

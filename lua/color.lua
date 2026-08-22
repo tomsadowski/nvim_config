@@ -544,6 +544,27 @@ M.apply = function(p)
       fg      = p.normal.g, 
     }, 
 
+    ['@path'] = {
+      ctermfg = p.path.t, 
+      fg      = p.path.g, 
+    }, 
+
+    ['@variant'] = {
+      ctermfg = p.variant.t, 
+      fg      = p.variant.g, 
+    }, 
+
+    ['@trunk'] = {
+      ctermfg = p.trunk.t, 
+      fg      = p.trunk.g, 
+    }, 
+
+    ['@import'] = {
+      ctermfg = p.import.t, 
+      fg      = p.import.g, 
+    }, 
+
+
     ['@enum'] = {
       ctermfg = p.type.t, 
       fg      = p.type.g, 
