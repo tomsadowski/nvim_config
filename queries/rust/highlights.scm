@@ -293,6 +293,8 @@ path: (crate) @path
 
 ((scoped_use_list) 
   path: (identifier) @path (#set! priority 105))
+argument: (scoped_use_list) 
+  path: (identifier) @path (#set! priority 105)
 (scoped_use_list      
   path: (scoped_identifier 
     name: (identifier) @path)) (#set! priority 105)
