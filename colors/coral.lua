@@ -1,4 +1,4 @@
--- kqsea
+-- coral
 
 require "treesitter"
 local c = require "color"
@@ -8,10 +8,10 @@ p.black.g    = "#202c40"
 p.dgrey.g    = "#587090"
 p.grey.g     = "#98a8e0"
 p.white.g    = "#b0aeac"
-p.magenta.g  = "#b890e0"
-p.cyan.g     = "#c07490"
+p.magenta.g  = "#b098ff"
+p.red.g      = "#c87490"
 
-p.dmagenta.g = "#402830"
+p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
 p.dblue.g    = "#283850"
 
@@ -28,7 +28,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.cyan,
+  keyword    = p.red,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
