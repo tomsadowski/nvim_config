@@ -35,6 +35,7 @@ c.apply {
   normal     = p.grey, 
 
   import     = p.white,
+  caller     = p.white,
   trunk      = p.white,
   path       = p.white, 
   variant    = p.white, 

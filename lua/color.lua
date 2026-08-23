@@ -559,6 +559,11 @@ M.apply = function(p)
       fg      = p.trunk.g, 
     }, 
 
+    ['@caller'] = {
+      ctermfg = p.caller.t, 
+      fg      = p.caller.g, 
+    }, 
+
     ['@import'] = {
       ctermfg = p.import.t, 
       fg      = p.import.g, 

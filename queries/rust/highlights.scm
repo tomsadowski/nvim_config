@@ -265,9 +265,11 @@ function: (scoped_identifier
 (call_expression
   function: (identifier) @function (#match? @function "^[a-z]"))
 
+; caller
 (call_expression 
   function: (field_expression 
-    value: (identifier) @variable))
+    value: (identifier) @caller)
+)
 
 (mut_pattern 
   (mutable_specifier)
@@ -362,22 +364,33 @@ argument: (scoped_use_list)
 (call_expression    
   function: (field_expression 
     field: (field_identifier) @function))
+
+; caller
 (call_expression    
   function: (field_expression
     value: (field_expression
-      field: (field_identifier) @variable)))
+      field: (field_identifier) @caller
+    )
+  )
+)
 
-function: (field_expression ; [57, 16] - [57, 23]
-  value: (identifier) @variable; [57, 16] - [57, 17]
-  field: (field_identifier)) ; [57, 18] - [57, 23]
+; caller
+function: (field_expression 
+  value: (identifier) @caller
+  field: (field_identifier)
+) 
 
 ; self
 (self)                          @variable.builtin
 (use_list                (self) @import (#set! priority 105))
 (field_expression value: (self) @trunk)
+
+; caller
 (call_expression 
   function: (field_expression   
-    value: (self) @variable))
+    value: (self) @caller
+  )
+)
 
 
 ; misc

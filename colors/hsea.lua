@@ -1,4 +1,4 @@
--- sea
+-- hsea
 
 require "treesitter"
 local c = require "color"
@@ -34,8 +34,8 @@ c.apply {
 
   comment    = p.dgrey, 
 
-  path       = p.white, 
-  trunk      = p.white,
+  path       = p.grey, 
+  trunk      = p.grey,
   caller     = p.white,
   import     = p.white,
   variant    = p.white, 
