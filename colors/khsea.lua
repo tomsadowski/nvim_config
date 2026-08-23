@@ -1,4 +1,4 @@
--- kqsea
+-- khsea
 
 require "treesitter"
 local c = require "color"
@@ -38,7 +38,7 @@ c.apply {
 
   path       = p.grey, 
   trunk      = p.grey,
-  caller     = p.grey,
+  caller     = p.white,
   import     = p.white,
   variant    = p.white, 
   variable   = p.white, 
