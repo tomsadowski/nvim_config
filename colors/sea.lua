@@ -1,20 +1,18 @@
--- berry
+-- sea
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#203048"
-p.dgrey.g    = "#607ca0"
-p.grey.g     = "#a0b0d8"
-p.white.g    = "#b8b0a8"
+p.black.g    = "#202c40"
+p.dgrey.g    = "#587090"
+p.grey.g     = "#98a8e0"
+p.white.g    = "#b0aeac"
+p.magenta.g  = "#b890c0"
 
 p.dmagenta.g = "#402830"
-p.dyellow.g  = "#504c40"
-p.dblue.g    = "#283440"
-
-p.dcyan.g    = "#40b8b0"
-p.magenta.g  = "#c098e0"
+p.dyellow.g  = "#4c4844"
+p.dblue.g    = "#283850"
 
 
 local CONSTANT = ""
