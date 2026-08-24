@@ -1,4 +1,4 @@
--- brightfire
+-- dayfire
 
 require "treesitter"
 local c = require "color"
@@ -6,11 +6,11 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#24282c"
 p.dgrey.g    = "#78808c"
-p.grey.g     = "#b2b8c0"
-p.white.g    = "#b0a090"
+p.grey.g     = "#c2c8d0"
+p.white.g    = "#c0b0a0"
 
-p.magenta.g  = "#a090e0"
-p.red.g      = "#e07088"
+p.magenta.g  = "#b0a0ff"
+p.red.g      = "#f08090"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"

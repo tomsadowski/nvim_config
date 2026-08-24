@@ -142,6 +142,10 @@
   "case"
 ] @keyword
 
+((identifier) @type (#match? @type "^[A-Z]"))
+
+(dotted_name (identifier) @trunk (identifier))
+
 (subscript 
   value: (identifier)
   subscript: (identifier) @param (#set! priority 105)
@@ -152,7 +156,7 @@
     object: (attribute
       object: (identifier)
       attribute: (identifier)
-    ) @normal
+    ) @trunk
     attribute: (identifier)
   )
   subscript: (attribute
@@ -164,7 +168,7 @@
 (attribute
   object: (attribute
     object: (identifier) 
-    attribute: (identifier) @normal
+    attribute: (identifier) @trunk
   )
 )
 
@@ -172,7 +176,7 @@
   function: (attribute
     object: (attribute
       object: (identifier)
-      attribute: (identifier) @variable (#set! priority 105)
+      attribute: (identifier) @caller (#set! priority 105)
     )
     attribute: (identifier)
   )
@@ -181,12 +185,7 @@
 
 (call
   function: (attribute
-    object: (identifier) @variable
+    object: (identifier) @caller (#set! priority 105)
   )
   arguments: (argument_list)
 )
-
-
-((identifier) @type (#match? @type "^[A-Z]"))
-
-(dotted_name (identifier) @normal (identifier))
