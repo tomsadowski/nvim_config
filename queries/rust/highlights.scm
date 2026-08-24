@@ -106,8 +106,7 @@
 (boolean_literal) @boolean
 (integer_literal) @number
 (float_literal) @number.float
-(primitive_type) @type
-
+(primitive_type) @type.primitive
 
 ; identifier
 (identifier) @normal
@@ -137,149 +136,210 @@
 (lifetime                     (identifier) @variable)
 (scoped_type_identifier path: (identifier) @path)
 (enum_variant           name: (identifier) @variant)
-
 (scoped_identifier path: (identifier) @path)
 (scoped_identifier name: (identifier) @type)
-
 (for_expression      pattern: (identifier) @variable)
 (for_expression        value: (identifier) @variable)
 (for_expression 
-  (reference_expression value: (identifier) @variable))
+  (reference_expression value: (identifier) @variable)
+)
 
 (match_expression (identifier) @variable)
+
 (match_expression 
-  (reference_expression value: (identifier) @variable.parameter))
+  (reference_expression value: (identifier) @variable.parameter)
+)
 
 (arguments (identifier) @variable)
+
 (arguments 
-  (reference_expression value: (identifier) @variable.parameter))
+  (reference_expression 
+    value: (identifier) @variable.parameter
+  )
+)
 
 (match_pattern (identifier) @variable)
+
 (or_pattern (identifier) @type (#match? @type "^[A-Z]"))
+
 (match_pattern 
-  (scoped_identifier name: (identifier) @type))  
-;(match_pattern (identifier) @type (#match? @type "^[A-Z]"))
+  (scoped_identifier name: (identifier) @type)
+)  
 
 (tuple_struct_pattern type: (identifier) @type)
+
 (tuple_struct_pattern   
   type: (identifier)    
-        (identifier) @variable.parameter)
+  (identifier) @variable.parameter
+)
+
 (tuple_struct_pattern   
   type: (identifier) 
-        (reference_pattern 
-          (identifier) @variable.parameter))
+  (reference_pattern 
+    (identifier) @variable.parameter
+  )
+)
+
 (tuple_struct_pattern   
   type: (scoped_identifier) 
-        (identifier) @variable.parameter)
+  (identifier) @variable.parameter
+)
+
 (tuple_struct_pattern
   type: (scoped_identifier
-    name: (identifier) @type))  
+    name: (identifier) @type
+  )
+)  
+
 (tuple_struct_pattern 
   type: (identifier) @type
-        (identifier) @variable.parameter)
+  (identifier) @variable.parameter
+)
 
 (let_condition (identifier) @variable)
+
 (let_condition       
   pattern: (tuple_struct_pattern) (identifier) @variable)
 
 (let_declaration       value: (identifier) @variable)
 (let_declaration     pattern: (identifier) @variable)
+
 (let_declaration 
   pattern: (tuple_struct_pattern 
     type: (identifier) 
-          (identifier) @normal))
+    (identifier) @normal
+  )
+)
 
 (reference_pattern (identifier) @variable.parameter)
 
 (parameter pattern: (identifier) @variable.parameter)
+
 (parameter 
-  (ref_pattern (identifier) @variable.parameter))
+  (ref_pattern (identifier) @variable.parameter)
+)
+
 (parameter 
   (ref_pattern 
-    (mut_pattern (identifier) @variable.parameter)))
+    (mut_pattern (identifier) @variable.parameter)
+  )
+)
 
 (attribute 
   (scoped_identifier 
-    (identifier) @function.macro .))
+    (identifier) @function.macro .
+  )
+)
 
 (attribute_item 
   (attribute 
-    (identifier) @normal))
+    (identifier) @normal
+  )
+)
+
 (attribute_item
   (attribute 
     (identifier) 
-    arguments: (token_tree (identifier) @variable)))
+    arguments: (token_tree 
+      (identifier) @variable
+    )
+  )
+)
 
 (inner_attribute_item 
   (attribute 
-    (identifier) @normal))
+    (identifier) @normal
+  )
+)
 
 (field_expression value: (identifier) @trunk)
 
 (generic_function (identifier) @function)
+
 (generic_function 
-  (scoped_identifier name: (identifier) @type))
+  (scoped_identifier 
+    name: (identifier) @type
+  )
+)
+
 (generic_function   
   function: (field_expression 
-    value: (identifier) @type))
+    value: (identifier) @type
+  )
+)
 
 (macro_invocation macro: (identifier) @function.macro)
+
 (macro_invocation
   macro: (scoped_identifier 
-    (identifier) @function.macro .))
+    (identifier) @function.macro .
+  )
+)
 
 path: (scoped_identifier 
   path: (identifier) 
-  name: (identifier) @path)
+  name: (identifier) @path
+)
 
 (scoped_identifier      
   (scoped_identifier 
-    name: (identifier) @path))
-
+    name: (identifier) @path)
+)
 
 function: (identifier) @type     (#match? @type "^[A-Z]")
 function: (identifier) @function (#match? @function "^[a-z]")
 
 function: (scoped_identifier      
   (scoped_identifier 
-    name: (identifier) @path))
+    name: (identifier) @path)
+)
 
 function: (scoped_identifier
   path: (identifier)
-  name: (identifier) @type (#match? @type "^[A-Z]"))
+  name: (identifier) @type (#match? @type "^[A-Z]")
+)
 
 function: (scoped_identifier
   path: (identifier)
-  name: (identifier) @function (#match? @function "^[a-z]"))
+  name: (identifier) @function (#match? @function "^[a-z]")
+)
 
 function: (scoped_identifier
   path: (scoped_identifier)
-  name: (identifier) @type (#match? @type "^[A-Z]"))
+  name: (identifier) @type (#match? @type "^[A-Z]")
+)
 
 function: (scoped_identifier
   path: (scoped_identifier)
-  name: (identifier) @function (#match? @function "^[a-z]"))
+  name: (identifier) @function (#match? @function "^[a-z]")
+)
 
 (call_expression
-  function: (identifier) @type     (#match? @type "^[A-Z]"))
-(call_expression
-  function: (identifier) @function (#match? @function "^[a-z]"))
+  function: (identifier) @type (#match? @type "^[A-Z]")
+)
 
-; caller
+(call_expression
+  function: (identifier) @function (#match? @function "^[a-z]")
+)
+
 (call_expression 
   function: (field_expression 
-    value: (identifier) @caller)
+    value: (identifier) @caller
+  )
 )
 
 (mut_pattern 
   (mutable_specifier)
-  (identifier) @variable)
+  (identifier) @variable
+)
 
 (use_list (identifier) @import)
+
 (use_list 
   (scoped_identifier
     path: (identifier) @path
-    name: (identifier) @import) (#set! priority 105))
+    name: (identifier) @import) (#set! priority 105)
+)
 
 path: (crate) @path
 
@@ -288,18 +348,27 @@ path: (crate) @path
 (use_declaration      
   argument: (scoped_identifier 
     path: (identifier) @path (#set! priority 105)
-    name: (identifier) @import)) (#set! priority 105)
+    name: (identifier) @import
+  )
+) (#set! priority 105)
+
 (use_declaration      
   argument: (scoped_identifier 
     name: (identifier) @import)) (#set! priority 105)
 
-((scoped_use_list) 
-  path: (identifier) @path (#set! priority 105))
+(
+ (scoped_use_list) 
+  path: (identifier) @path (#set! priority 105)
+)
+
 argument: (scoped_use_list) 
   path: (identifier) @path (#set! priority 105)
+
 (scoped_use_list      
   path: (scoped_identifier 
-    name: (identifier) @path)) (#set! priority 105)
+    name: (identifier) @path
+  )
+) (#set! priority 105)
 
 ((identifier) @constant (#match? @constant "^[A-Z][A-Z_]*$"))
 ((identifier) @type     (#any-of? @type "Some" "None" "Ok" "Err"))
@@ -307,14 +376,12 @@ argument: (scoped_use_list)
 (let_declaration
   pattern: (tuple_struct_pattern
     type: (identifier)
-          (identifier) @variable
+    (identifier) @variable
   )
 )
 
-
 ; shorthand_field_identifier
 (shorthand_field_identifier) @variable
-
 
 ; type_identifier
 (type_identifier)                                       @type
@@ -329,18 +396,22 @@ argument: (scoped_use_list)
 (impl_item        (type_identifier) @type)
 (impl_item trait: (type_identifier) @type)
 (impl_item  type: (type_identifier) @type)
+
 (impl_item 
-  (generic_type (type_identifier) @type))
+  (generic_type (type_identifier) @type)
+)
 
 (scoped_type_identifier name: (type_identifier) @type)
 
 (generic_type 
   type: (scoped_type_identifier 
-    name: (type_identifier) @type))
+    name: (type_identifier) @type)
+)
 
 (struct_expression 
   name: (scoped_type_identifier 
-    name: (type_identifier) @type))
+    name: (type_identifier) @type)
+)
 
 ; field_identifier
 (field_identifier) @variable
@@ -348,24 +419,34 @@ argument: (scoped_use_list)
 (field_declaration name: (field_identifier) @variable.member.declaration)
 (field_initializer       (field_identifier) @variable)
 
-(field_expression field: (field_identifier) @variable.member)
+(field_expression 
+  field: (field_identifier) @variable.member
+)
+
 (field_expression      
   value: (field_expression      
-    field: (field_identifier) @trunk))
+    field: (field_identifier) @trunk
+  )
+)
 
 (index_expression 
   (field_expression
-    field: (field_identifier) @variable))
+    field: (field_identifier) @variable
+  )
+)
 
 (generic_function   
   function: (field_expression 
-    field: (field_identifier) @function))
+    field: (field_identifier) @function
+  )
+)
 
 (call_expression    
   function: (field_expression 
-    field: (field_identifier) @function))
+    field: (field_identifier) @function
+  )
+)
 
-; caller
 (call_expression    
   function: (field_expression
     value: (field_expression
@@ -374,7 +455,6 @@ argument: (scoped_use_list)
   )
 )
 
-; caller
 function: (field_expression 
   value: (identifier) @caller
   field: (field_identifier)
@@ -385,7 +465,6 @@ function: (field_expression
 (use_list                (self) @import (#set! priority 105))
 (field_expression value: (self) @trunk)
 
-; caller
 (call_expression 
   function: (field_expression   
     value: (self) @caller
@@ -397,7 +476,11 @@ function: (field_expression
 (metavariable) @function.macro
 (macro_definition "macro_rules!" @function.macro)
 (ordered_field_declaration_list type: (generic_type) @type)
-(scoped_type_identifier         path: (scoped_identifier) @path (#set! priority 105))
+
+(scoped_type_identifier         
+  path: (scoped_identifier) @path (#set! priority 105)
+)
+
 "$" @function.macro
 (macro_invocation "!" @function)
 (closure_parameters (_) @variable.parameter)

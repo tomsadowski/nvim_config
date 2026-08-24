@@ -208,6 +208,12 @@ M.apply = function(p)
       fg      = p.item.g, 
     }, 
 
+    ['@variable.member.declaration'] = {
+      ctermfg = p.memberdecl.t, 
+      fg      = p.memberdecl.g, 
+    }, 
+
+
     ['@variable'] = {
       ctermfg = p.variable.t, 
       fg      = p.variable.g, 
@@ -513,6 +519,11 @@ M.apply = function(p)
       ctermfg = p.func.t, 
       fg      = p.func.g, 
     }, 
+
+    ['@type.primitive'] = {
+      ctermfg = p.btype.t, 
+      fg      = p.btype.g, 
+    },
 
     ['@type'] = {
       ctermfg = p.type.t, 

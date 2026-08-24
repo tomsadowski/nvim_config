@@ -25,7 +25,7 @@ vim.o.laststatus = 1
 vim.o.signcolumn = 'yes'
 
 -- fold
-vim.o.foldmethod = 'syntax'
+vim.o.foldmethod = 'manual'
 vim.o.foldenable = false
 --vim.cmd('set foldlevelstart=99') 
 
