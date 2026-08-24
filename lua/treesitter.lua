@@ -13,6 +13,20 @@ vim.api.nvim_create_autocmd(
   }
 )
 
+vim.api.nvim_create_autocmd(
+  {
+    'BufEnter', 
+    'BufWinEnter'
+  }, 
+  {
+    pattern = {'*.js'},
+    callback = function(args)
+      vim.treesitter.start(args.buf, 'javascript')
+    end
+  }
+)
+
+
 vim.api.nvim_create_autocmd( 
   'FileType', 
   { 
