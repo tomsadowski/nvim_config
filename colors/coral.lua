@@ -39,6 +39,7 @@ c.apply {
   path       = p.grey, 
   trunk      = p.grey,
   caller     = p.grey,
+  memberdecl = p.white, 
   import     = p.white,
   variant    = p.white, 
   variable   = p.white, 
