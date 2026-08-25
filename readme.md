@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### dayfire
-![dayfire](pics/dayfire.png)
+### beach
+![beach](pics/beach.png)
