@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### luma
-![luma](pics/luma.png)
+### dayfire
+![dayfire](pics/dayfire.png)
