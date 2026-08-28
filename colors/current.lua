@@ -9,8 +9,9 @@ p.dgrey.g    = "#708090"
 p.grey.g     = "#d0e0f0"
 p.white.g    = "#f0e0d0"
 
-p.magenta.g  = "#a0e0e0"
-p.red.g      = "#f0b080"
+p.cyan.g     = "#a0e8e0"
+p.yellow.g   = "#ffb080"
+p.magenta.g  = "#e0b8ff"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
@@ -29,7 +30,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.yellow,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -52,7 +53,7 @@ c.apply {
   constant   = p.white, 
 
 
-  literal    = p.magenta, 
-  str        = p.magenta, 
-  matchparen = p.magenta, 
+  literal    = p.cyan, 
+  str        = p.cyan, 
+  matchparen = p.cyan, 
 }
