@@ -10,4 +10,4 @@
 ## Colorschemes
 
 ### beach
-![beach](pics/beach.png)
+![beach-vim-python](pics/beach-vim-python.png)
