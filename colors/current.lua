@@ -36,7 +36,7 @@ c.apply {
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.magenta, 
 
   path       = p.grey, 
   trunk      = p.grey,
