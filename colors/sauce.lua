@@ -1,18 +1,22 @@
--- sea
+-- sauce
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#202c40"
-p.dgrey.g    = "#587090"
-p.grey.g     = "#98a8e0"
-p.white.g    = "#b0aeac"
-p.magenta.g  = "#b890c0"
+p.black.g    = "#24282c"
+p.dgrey.g    = "#708090"
+p.grey.g     = "#d8e0e8"
+p.white.g    = "#f0e0d0"
 
-p.dmagenta.g = "#402830"
+p.cyan.g     = "#a0c8c0"
+p.yellow.g   = "#ffa070"
+p.green.g    = "#e0d890"
+p.magenta.g  = "#e8b0c0"
+
+p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
-p.dblue.g    = "#283850"
+p.dblue.g    = "#303840"
 
 
 local CONSTANT = ""
@@ -27,26 +31,28 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
+  keyword    = p.yellow,
+
   msgarea    = p.grey, 
-  keyword    = p.grey,
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.cyan, 
 
-  path       = p.white, 
-  trunk      = p.white,
+  path       = p.grey, 
+  trunk      = p.grey,
+  caller     = p.grey,
   memberdecl = p.white, 
-  caller     = p.white,
   import     = p.white,
   variant    = p.white, 
   variable   = p.white, 
   func       = p.white, 
   typeparam  = p.white,
   item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.green, 
 
 
   literal    = p.magenta, 

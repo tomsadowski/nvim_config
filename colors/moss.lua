@@ -1,16 +1,18 @@
--- dayfire
+-- moss
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#24282c"
-p.dgrey.g    = "#78808c"
-p.grey.g     = "#c2c8d0"
-p.white.g    = "#c0b0a0"
+p.dgrey.g    = "#708090"
+p.grey.g     = "#d8e0e8"
+p.white.g    = "#f0e0d0"
 
-p.magenta.g  = "#b0a0ff"
-p.red.g      = "#f08090"
+p.cyan.g     = "#a0e8e0"
+p.yellow.g   = "#ffa070"
+p.green.g    = "#e0d890"
+p.magenta.g  = "#e8a8c0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
@@ -29,13 +31,13 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.yellow,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.magenta, 
 
   path       = p.grey, 
   trunk      = p.grey,
@@ -47,12 +49,13 @@ c.apply {
   func       = p.white, 
   typeparam  = p.white,
   item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.green, 
 
 
-  literal    = p.magenta, 
-  str        = p.magenta, 
-  matchparen = p.magenta, 
+  literal    = p.cyan, 
+  str        = p.cyan, 
+  matchparen = p.cyan, 
 }

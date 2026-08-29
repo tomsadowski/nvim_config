@@ -1,4 +1,4 @@
--- beach
+-- sauce
 
 require "treesitter"
 local c = require "color"
@@ -6,12 +6,13 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#24282c"
 p.dgrey.g    = "#708090"
-p.grey.g     = "#d0e0f0"
+p.grey.g     = "#d8e0e8"
 p.white.g    = "#f0e0d0"
 
-p.cyan.g     = "#a0e8e0"
-p.yellow.g   = "#ffb080"
-p.magenta.g  = "#e0b8ff"
+p.cyan.g     = "#a0c8c0"
+p.yellow.g   = "#ffa070"
+p.green.g    = "#e0d890"
+p.magenta.g  = "#e8b0c0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
@@ -36,7 +37,7 @@ c.apply {
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.magenta, 
+  comment    = p.cyan, 
 
   path       = p.grey, 
   trunk      = p.grey,
@@ -48,12 +49,13 @@ c.apply {
   func       = p.white, 
   typeparam  = p.white,
   item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.green, 
 
 
-  literal    = p.cyan, 
-  str        = p.cyan, 
-  matchparen = p.cyan, 
+  literal    = p.magenta, 
+  str        = p.magenta, 
+  matchparen = p.magenta, 
 }

@@ -1,20 +1,22 @@
--- fire
+-- beach
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#141618"
-p.dgrey.g    = "#686c78"
-p.grey.g     = "#a2a4a8"
-p.white.g    = "#a09080"
+p.black.g    = "#24282c"
+p.dgrey.g    = "#708090"
+p.grey.g     = "#d0e0f0"
+p.white.g    = "#f0e0d0"
 
-p.magenta.g  = "#a090e0"
-p.red.g      = "#d06078"
+p.cyan.g     = "#a0e8e0"
+p.yellow.g   = "#ffb080"
+p.green.g    = "#e0e0a0"
+p.magenta.g  = "#c8a8e0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
-p.dblue.g    = "#283850"
+p.dblue.g    = "#303840"
 
 
 local CONSTANT = ""
@@ -29,13 +31,13 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.yellow,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.magenta, 
 
   path       = p.grey, 
   trunk      = p.grey,
@@ -47,12 +49,13 @@ c.apply {
   func       = p.white, 
   typeparam  = p.white,
   item       = p.white, 
-  type       = p.white, 
-  btype      = p.white, 
-  constant   = p.white, 
+
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.green, 
 
 
-  literal    = p.magenta, 
-  str        = p.magenta, 
-  matchparen = p.magenta, 
+  literal    = p.cyan, 
+  str        = p.cyan, 
+  matchparen = p.cyan, 
 }
