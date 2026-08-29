@@ -9,5 +9,5 @@
 
 ## Colorschemes
 
-### beach
-![beach-vim-python](pics/beach-vim-python.png)
+### moss
+![moss](pics/moss-constants.png)

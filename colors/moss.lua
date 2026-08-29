@@ -9,10 +9,10 @@ p.dgrey.g    = "#708090"
 p.grey.g     = "#d8e0e8"
 p.white.g    = "#f0e0d0"
 
-p.cyan.g     = "#a0e8e0"
+p.cyan.g     = "#a0c8c0"
 p.yellow.g   = "#ffa070"
 p.green.g    = "#e0d890"
-p.magenta.g  = "#e8a8c0"
+p.magenta.g  = "#e8b0c0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
@@ -37,7 +37,7 @@ c.apply {
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.magenta, 
+  comment    = p.cyan, 
 
   path       = p.grey, 
   trunk      = p.grey,
@@ -52,10 +52,10 @@ c.apply {
 
   type       = p.green, 
   btype      = p.green, 
-  constant   = p.green, 
+  constant   = p.white, 
 
 
-  literal    = p.cyan, 
-  str        = p.cyan, 
-  matchparen = p.cyan, 
+  literal    = p.magenta, 
+  str        = p.magenta, 
+  matchparen = p.magenta, 
 }

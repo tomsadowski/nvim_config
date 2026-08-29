@@ -1,4 +1,4 @@
--- sauce
+-- moss
 
 require "treesitter"
 local c = require "color"
@@ -52,7 +52,7 @@ c.apply {
 
   type       = p.green, 
   btype      = p.green, 
-  constant   = p.green, 
+  constant   = p.white, 
 
 
   literal    = p.magenta, 
