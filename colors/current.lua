@@ -7,11 +7,11 @@ local p = vim.deepcopy(c.palette)
 p.black.g    = "#24282c"
 p.dgrey.g    = "#707880"
 p.grey.g     = "#c8cacc"
-p.white.g    = "#d0c0b0"
+p.white.g    = "#d8c8b8"
 
 p.cyan.g     = "#709c98"
-p.red.g      = "#f8a070"
-p.yellow.g   = "#c4c088"
+p.yellow.g   = "#f0a078"
+p.green.g    = "#a8c084"
 p.magenta.g  = "#e0acb8"
 
 p.dmagenta.g = "#402c40"
@@ -31,7 +31,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.yellow,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -50,10 +50,9 @@ c.apply {
   typeparam  = p.white,
   item       = p.white, 
 
-  type       = p.yellow, 
-  btype      = p.yellow, 
-  constant   = p.yellow, 
-
+  type       = p.green, 
+  btype      = p.green, 
+  constant   = p.white, 
 
   literal    = p.magenta, 
   str        = p.magenta, 
