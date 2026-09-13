@@ -12,9 +12,9 @@ p.white.g    = "#d0beb0"
 -- commenting 
 -- commenting again
 p.cyan.g     = "#60b8c0"
-p.red.g      = "#e09070"
+p.red.g      = "#f09870"
 p.green.g    = "#a4c470"
-p.magenta.g  = "#dca0b8"
+p.magenta.g  = "#dcaac0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
