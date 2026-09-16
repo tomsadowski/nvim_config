@@ -6,15 +6,15 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#202225"
 p.dgrey.g    = "#707880"
-p.grey.g     = "#c2c4c8"
-p.white.g    = "#c8b8a8"
+p.grey.g     = "#b2b4b8"
+p.white.g    = "#b0a8a0"
 
 -- commenting 
 -- commenting again
 p.cyan.g     = "#609896"
-p.red.g      = "#df8d70"
+p.red.g      = "#d88870"
 p.green.g    = "#98ba6c"
-p.magenta.g  = "#ca98aa"
+p.magenta.g  = "#c092a6"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
