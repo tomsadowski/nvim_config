@@ -9,7 +9,7 @@ p.dgrey.g    = "#707880"
 --p.grey.g     = "#b6b7ba"
 --p.grey.g     = "#a8a9b0"
 p.grey.g     = "#b8b9c0"
-p.white.g    = "#b8a6a2"
+p.white.g    = "#c0a6a2"
 
 -- commenting 
 -- commenting again
