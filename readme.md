@@ -5,5 +5,5 @@
 
 ## Colorschemes
 
-### death
-![death](pics/death.png)
+### moss
+![moss](pics/moss.png)
