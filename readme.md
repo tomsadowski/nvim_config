@@ -10,4 +10,6 @@
 ## Colorschemes
 
 ### moss
-![moss](pics/moss.png)
+![moss-1](pics/moss-1.png)
+![moss-2](pics/moss-2.png)
+![moss-3](pics/moss-3.png)
