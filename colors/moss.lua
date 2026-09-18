@@ -15,7 +15,7 @@ p.white.g    = "#b6a6a2"
 -- commenting again
 p.cyan.g     = "#608880"
 p.red.g      = "#d28470"
-p.green.g    = "#9cb070"
+p.green.g    = "#a0a870"
 p.magenta.g  = "#c391a4"
 
 p.dmagenta.g = "#402c40"

@@ -34,6 +34,8 @@ vim.o.foldenable = false
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
 
+-- interact with system clipboard
+vim.opt.clipboard = "unnamedplus"
 -- needed to paste text from clipboard
 vim.cmd('set mouse=')
 

@@ -10,4 +10,4 @@
 ## Colorschemes
 
 ### moss
-![moss](pics/moss-rust.png)
+![moss](pics/moss.png)
