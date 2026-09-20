@@ -7,3 +7,6 @@
 
 ### moss
 ![moss](pics/moss.png)
+
+### loss
+![loss](pics/loss.png)

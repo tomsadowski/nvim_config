@@ -4,22 +4,27 @@ require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
+-- commenting for fun 
+local GREYSCALE = ""
 p.black.g    = "#202225"
 p.dgrey.g    = "#707880"
 p.grey.g     = "#aaabb0"
 p.white.g    = "#b8a098"
 
-p.green.g    = "#a09070"
-p.cyan.g     = "#709080"
+-- commenting for fun 
+local COLORS = ""
+p.green.g    = "#aa9c70"
+p.cyan.g     = "#708884"
 p.magenta.g  = "#c492ac"
-p.red.g      = "#d4746c"
+p.red.g      = "#d47c74"
 
+-- commenting for fun 
+local BACKGROUND_HIGHLIGHT = ""
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4c4844"
 p.dblue.g    = "#30343a"
 
 -- commenting 
--- commenting again
 local CONSTANT = ""
 
 c.apply {
