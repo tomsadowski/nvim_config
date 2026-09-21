@@ -1,4 +1,4 @@
--- moss
+-- fire
 
 require "treesitter"
 local c = require "color"
@@ -8,20 +8,20 @@ local p = vim.deepcopy(c.palette)
 local GREYSCALE = ""
 p.black.g    = "#202225"
 p.dgrey.g    = "#707880"
-p.grey.g     = "#aaabb0"
-p.white.g    = "#b8a098"
+p.grey.g     = "#bdbfc8"
+p.white.g    = "#ccb0a8"
 
 -- commenting for fun 
 local COLORS = ""
-p.green.g    = "#d0a050"
-p.cyan.g     = "#708884"
-p.magenta.g  = "#b090b0"
-p.red.g      = "#e07870"
+p.yellow.g   = "#e8a88c"
+p.cyan.g     = "#a0baf0"
+p.magenta.g  = "#d6a2bc"
+p.red.g      = "#f08080"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
 p.dmagenta.g = "#402c40"
-p.dyellow.g  = "#4c4844"
+p.dyellow.g  = "#4a403c"
 p.dblue.g    = "#30343a"
 
 -- commenting 
@@ -56,9 +56,9 @@ c.apply {
   typeparam  = p.white,
   item       = p.white, 
 
-  type       = p.green, 
-  btype      = p.green, 
-  constant   = p.green, 
+  type       = p.yellow, 
+  btype      = p.yellow, 
+  constant   = p.yellow, 
 
   literal    = p.magenta, 
   str        = p.magenta, 
