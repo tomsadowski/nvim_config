@@ -15,8 +15,8 @@ p.white.g    = "#b8a098"
 local COLORS = ""
 p.green.g    = "#aa9c70"
 p.cyan.g     = "#708884"
-p.magenta.g  = "#bc94b8"
-p.red.g      = "#c07c74"
+p.magenta.g  = "#c092b0"
+p.red.g      = "#d47c74"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
