@@ -8,5 +8,5 @@
 ### moss
 ![moss](pics/moss.png)
 
-### loss
-![loss](pics/loss.png)
+### fire
+![fire](pics/fire.png)
