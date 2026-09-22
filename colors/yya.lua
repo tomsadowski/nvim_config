@@ -13,10 +13,10 @@ p.white.g    = "#ccb0a8"
 
 -- commenting for fun 
 local COLORS = ""
-p.yellow.g   = "#e0ae82"
+p.yellow.g   = "#e0ac84"
 p.cyan.g     = "#a0b0ff"
 p.magenta.g  = "#d8a4c0"
-p.red.g      = "#e87c80"
+p.red.g      = "#f08080"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
