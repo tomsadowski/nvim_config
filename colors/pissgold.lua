@@ -13,10 +13,10 @@ p.white.g    = "#ccb0a8"
 
 -- commenting for fun 
 local COLORS = ""
-p.yellow.g   = "#e0b080"
-p.cyan.g     = "#a0b0ff"
-p.magenta.g  = "#d8a4c0"
-p.red.g      = "#f08080"
+p.yellow.g   = "#d0a8e0"
+p.cyan.g     = "#a0baff"
+p.magenta.g  = "#e0a8b8"
+p.red.g      = "#e0a870"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
@@ -60,7 +60,7 @@ c.apply {
   btype      = p.magenta, 
   constant   = p.magenta, 
 
-  literal    = p.yellow, 
-  str        = p.yellow, 
-  matchparen = p.yellow, 
+  literal    = p.red, 
+  str        = p.red, 
+  matchparen = p.red, 
 }

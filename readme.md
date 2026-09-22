@@ -5,8 +5,5 @@
 
 ## Colorschemes
 
-### moss
-![moss](pics/moss.png)
-
-### fire
-![fire](pics/fire.png)
+### ya
+![ya](pics/ya.png)

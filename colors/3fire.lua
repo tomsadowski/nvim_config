@@ -13,9 +13,9 @@ p.white.g    = "#ccb0a8"
 
 -- commenting for fun 
 local COLORS = ""
-p.yellow.g   = "#e0b080"
-p.cyan.g     = "#a0b0ff"
-p.magenta.g  = "#d8a4c0"
+p.yellow.g   = "#e0a8a0"
+p.cyan.g     = "#a0baf0"
+p.magenta.g  = "#d6a2bc"
 p.red.g      = "#f08080"
 
 -- commenting for fun 
@@ -56,11 +56,11 @@ c.apply {
   typeparam  = p.white,
   item       = p.white, 
 
-  type       = p.magenta, 
-  btype      = p.magenta, 
-  constant   = p.magenta, 
+  type       = p.yellow, 
+  btype      = p.yellow, 
+  constant   = p.yellow, 
 
-  literal    = p.yellow, 
-  str        = p.yellow, 
-  matchparen = p.yellow, 
+  literal    = p.magenta, 
+  str        = p.magenta, 
+  matchparen = p.magenta, 
 }
