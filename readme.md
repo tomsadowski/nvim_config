@@ -7,3 +7,5 @@
 
 ### omy
 ![omy](pics/omy.png)
+
+![omy-rust](pics/omy-rust.png)
