@@ -15,8 +15,8 @@ local COLORS = ""
 p.yellow.g   = "#ccb0a8"
 p.cyan.g     = "#80c4bc"
 p.dcyan.g    = "#9cb8e8"
-p.magenta.g  = "#f08c98"
-p.red.g      = "#d0a0cc"
+p.red.g      = "#f08c98"
+p.magenta.g  = "#d0a0cc"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
@@ -37,7 +37,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.magenta,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -56,9 +56,9 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.magenta, 
-  btype      = p.magenta, 
-  constant   = p.magenta, 
+  type       = p.red, 
+  btype      = p.red, 
+  constant   = p.red, 
 
   literal    = p.cyan, 
   str        = p.cyan, 

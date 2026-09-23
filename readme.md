@@ -5,5 +5,5 @@
 
 ## Colorschemes
 
-### ya
-![ya](pics/ya.png)
+### omy
+![omy](pics/omy.png)
