@@ -1,4 +1,4 @@
--- oya
+-- ya
 
 require "treesitter"
 local c = require "color"
@@ -12,11 +12,11 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#e0988c"
+p.red.g      = "#f09488"
 p.yellow.g   = "#ccb0a8"
-p.cyan.g     = "#80b0a8"
-p.dcyan.g    = "#98a0f0"
-p.magenta.g  = "#d098b0"
+p.cyan.g     = "#88c0b8"
+p.dcyan.g    = "#a0b0e0"
+p.magenta.g  = "#dca6b8"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
@@ -37,7 +37,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.magenta,
+  keyword    = p.red,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -56,9 +56,9 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.red, 
-  btype      = p.red, 
-  constant   = p.red, 
+  type       = p.magenta, 
+  btype      = p.magenta, 
+  constant   = p.magenta, 
 
   literal    = p.cyan, 
   str        = p.cyan, 

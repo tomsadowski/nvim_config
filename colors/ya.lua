@@ -1,4 +1,4 @@
--- garden
+-- ya
 
 require "treesitter"
 local c = require "color"
@@ -12,11 +12,11 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
+p.red.g      = "#f09488"
 p.yellow.g   = "#ccb0a8"
-p.cyan.g     = "#80c4bc"
-p.dcyan.g    = "#9cbce8"
-p.magenta.g  = "#e0a8c4"
-p.red.g      = "#e8807c"
+p.cyan.g     = "#88c0b8"
+p.dcyan.g    = "#a0b0e0"
+p.magenta.g  = "#dca6b8"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
