@@ -15,7 +15,7 @@ local COLORS = ""
 p.yellow.g   = "#ccb0a8"
 p.cyan.g     = "#80c4bc"
 p.dcyan.g    = "#9cbce8"
-p.magenta.g  = "#dcacc0"
+p.magenta.g  = "#e0a8c4"
 p.red.g      = "#e8807c"
 
 -- commenting for fun 
