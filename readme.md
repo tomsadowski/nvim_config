@@ -5,6 +5,9 @@
 
 ## Colorschemes
 
+### mars
+![mars-rust](pics/mars-rust.png)
+
 ### omy
 ![omy](pics/omy.png)
 
