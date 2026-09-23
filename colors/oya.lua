@@ -1,4 +1,4 @@
--- garden
+-- oya
 
 require "treesitter"
 local c = require "color"
@@ -15,8 +15,8 @@ local COLORS = ""
 p.yellow.g   = "#ccb0a8"
 p.cyan.g     = "#80c4bc"
 p.dcyan.g    = "#9cb8e8"
-p.magenta.g  = "#e09c78"
-p.red.g      = "#d8a0cc"
+p.magenta.g  = "#f08c98"
+p.red.g      = "#d0a0cc"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
