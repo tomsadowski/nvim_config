@@ -5,10 +5,6 @@
 
 ## Colorschemes
 
-### mars
-![mars-rust](pics/mars-rust.png)
-
-### omy
-![omy](pics/omy.png)
-
-![omy-rust](pics/omy-rust.png)
+### ya
+![ya-rust](pics/ya-rust.png)
+![ya-python](pics/ya-python.png)
