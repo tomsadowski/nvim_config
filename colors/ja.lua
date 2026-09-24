@@ -12,7 +12,7 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#f09878"
+p.red.g      = "#e09878"
 p.yellow.g   = "#ccb0a8"
 p.cyan.g     = "#88c0b8"
 p.dcyan.g    = "#a0b0e0"
