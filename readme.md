@@ -7,4 +7,5 @@
 
 ### ya
 ![ya-rust](pics/ya-rust.png)
+![ya-rust-2](pics/ya-rust-2.png)
 ![ya-python](pics/ya-python.png)
