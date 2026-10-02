@@ -12,7 +12,7 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#d08088"
+p.red.g      = "#d8907c"
 p.yellow.g   = "#ccb0a8"
 p.cyan.g     = "#88b8b0"
 p.magenta.g  = "#a0a0c0"
@@ -42,7 +42,7 @@ c.apply {
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.magenta, 
 
   path       = p.grey, 
   trunk      = p.grey,

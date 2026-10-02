@@ -5,8 +5,8 @@
 
 ## Colorschemes
 
-## 4ya
-![4ya-rust](pics/4ya.png)
+## da
+![da-rust](pics/da.png)
 
 ### ya
 ![ya-rust](pics/ya-rust.png)
