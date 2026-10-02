@@ -6,7 +6,8 @@
 ## Colorschemes
 
 ## da
-![da-rust](pics/da.png)
+![da-rust-2](pics/da-rust-2.png)
+![da-rust](pics/da-rust.png)
 
 ### ya
 ![ya-rust](pics/ya-rust.png)
