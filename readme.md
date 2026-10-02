@@ -5,9 +5,9 @@
 
 ## Colorschemes
 
-## da
-![da-rust-2](pics/da-rust-2.png)
-![da-rust](pics/da-rust.png)
+## fire
+![fire-rust](pics/fire-rust.png)
+![fire-python](pics/fire-python.png)
 
 ### ya
 ![ya-rust](pics/ya-rust.png)
