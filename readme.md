@@ -5,9 +5,9 @@
 
 ## Colorschemes
 
-## fire
-![fire-rust](pics/fire-rust.png)
-![fire-python](pics/fire-python.png)
+## garden
+![garden-rust](pics/garden-rust.png)
+![garden-python](pics/garden-python.png)
 
 ### ya
 ![ya-rust](pics/ya-rust.png)
