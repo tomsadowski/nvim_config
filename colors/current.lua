@@ -12,8 +12,8 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#bcac60"
 p.yellow.g   = "#ccb0a8"
+p.green.g    = "#bcac60"
 p.cyan.g     = "#80aaa4"
 p.magenta.g  = "#c89cc0"
 
@@ -36,7 +36,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.green,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
