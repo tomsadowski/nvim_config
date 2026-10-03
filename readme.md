@@ -5,11 +5,6 @@
 
 ## Colorschemes
 
-## garden
-![garden-rust](pics/garden-rust.png)
-![garden-python](pics/garden-python.png)
-
-### ya
-![ya-rust](pics/ya-rust.png)
-![ya-rust-2](pics/ya-rust-2.png)
-![ya-python](pics/ya-python.png)
+## heart
+![heart-rust](pics/heart-rust.png)
+![heart-python](pics/heart-python.png)
