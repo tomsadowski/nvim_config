@@ -1,4 +1,4 @@
--- ya
+-- fire
 
 require "treesitter"
 local c = require "color"
@@ -12,10 +12,9 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#d8907c"
+p.red.g      = "#d0908c"
 p.yellow.g   = "#ccb0a8"
-p.cyan.g     = "#88b8b0"
-p.magenta.g  = "#a0a0c0"
+p.magenta.g  = "#c09cc0"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
@@ -59,7 +58,7 @@ c.apply {
   btype      = p.grey, 
   constant   = p.yellow, 
 
-  literal    = p.cyan, 
-  str        = p.cyan, 
-  matchparen = p.cyan, 
+  literal    = p.magenta, 
+  str        = p.magenta, 
+  matchparen = p.magenta, 
 }
