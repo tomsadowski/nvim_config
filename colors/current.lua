@@ -1,4 +1,4 @@
--- fire
+-- garden
 
 require "treesitter"
 local c = require "color"
@@ -12,9 +12,10 @@ p.grey.g     = "#bdbfc8"
 
 -- commenting for fun 
 local COLORS = ""
-p.red.g      = "#d89090"
-p.yellow.g   = "#ccaca6"
-p.magenta.g  = "#c09cc0"
+p.red.g      = "#bcac60"
+p.yellow.g   = "#ccb0a8"
+p.cyan.g     = "#80aaa4"
+p.magenta.g  = "#c89cc0"
 
 -- commenting for fun 
 local BACKGROUND_HIGHLIGHT = ""
@@ -41,7 +42,7 @@ c.apply {
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dgrey, 
+  comment    = p.cyan, 
 
   path       = p.grey, 
   trunk      = p.grey,
