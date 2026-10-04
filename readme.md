@@ -8,5 +8,6 @@
 ## clay
 ![clay-rust-1](pics/clay-rust-1.png)
 ![clay-rust-2](pics/clay-rust-2.png)
+![clay-rust-3](pics/clay-rust-3.png)
 ![clay-python-1](pics/clay-python-1.png)
 
