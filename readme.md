@@ -5,6 +5,5 @@
 
 ## Colorschemes
 
-## heart
-![heart-rust](pics/heart-rust.png)
-![heart-python](pics/heart-python.png)
+## luma
+![luma-rust-gbrowse](pics/luma-rust-gbrowse.png)

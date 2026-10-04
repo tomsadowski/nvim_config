@@ -1,4 +1,4 @@
--- light
+-- luma
 
 require "treesitter"
 local c = require "color"
@@ -6,11 +6,11 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#202225"
 p.dgrey.g    = "#70787c"
-p.grey.g     = "#bdc0c0"
+p.grey.g     = "#bdbfc8"
 
-p.yellow.g   = "#e0c0a8"
-p.magenta.g  = "#e090c0"
-p.cyan.g     = "#70c0b0"
+p.magenta.g  = "#e088b8"
+p.yellow.g   = "#caac98"
+p.cyan.g     = "#76c0b0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
