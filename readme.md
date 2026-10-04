@@ -5,5 +5,9 @@
 
 ## Colorschemes
 
+## seamstress
+![seamstress-rust](pics/seamstress-rust.png)
+![seamstress-python](pics/seamstress-python.png)
+
 ## luma
 ![luma-rust-gbrowse](pics/luma-rust-gbrowse.png)
