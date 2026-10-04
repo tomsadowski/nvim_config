@@ -1,31 +1,20 @@
--- ya
+-- seamstress
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
--- commenting for fun 
-local GREYSCALE = ""
 p.black.g    = "#202225"
-p.dgrey.g    = "#707880"
+p.dgrey.g    = "#707780"
 p.grey.g     = "#bdbfc8"
 
--- commenting for fun 
-local COLORS = ""
-p.red.g      = "#e09878"
-p.yellow.g   = "#ccb0a8"
-p.cyan.g     = "#88c0b8"
-p.dcyan.g    = "#a2a0cc"
-p.magenta.g  = "#cc98b0"
+p.magenta.g  = "#e08880"
+p.yellow.g   = "#caac98"
+p.cyan.g     = "#d0a0b0"
 
--- commenting for fun 
-local BACKGROUND_HIGHLIGHT = ""
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
 p.dblue.g    = "#30343a"
-
--- commenting 
-local CONSTANT = ""
 
 c.apply {
   search     = p.dyellow, 
@@ -37,28 +26,28 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.red,
+  keyword    = p.magenta,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
   curlineno  = p.grey, 
 
-  comment    = p.dcyan, 
+  comment    = p.dgrey, 
 
   path       = p.grey, 
   trunk      = p.grey,
-  caller     = p.grey,
+  caller     = p.yellow,
+  func       = p.grey, 
   memberdecl = p.yellow, 
   import     = p.yellow,
   variant    = p.yellow, 
   variable   = p.yellow, 
-  func       = p.yellow, 
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.magenta, 
-  btype      = p.magenta, 
-  constant   = p.magenta, 
+  type       = p.grey, 
+  btype      = p.grey, 
+  constant   = p.yellow, 
 
   literal    = p.cyan, 
   str        = p.cyan, 
