@@ -1,4 +1,4 @@
--- seamstress
+-- heart
 
 require "treesitter"
 local c = require "color"
@@ -10,7 +10,7 @@ p.grey.g     = "#bdbfc8"
 
 p.magenta.g  = "#e08880"
 p.yellow.g   = "#caac98"
-p.cyan.g     = "#d0a0b0"
+p.cyan.g     = "#c8a0b8"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
