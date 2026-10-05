@@ -4,9 +4,9 @@ require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#202020"
-p.dgrey.g    = "#808080"
-p.grey.g     = "#c0c0c0"
+p.black.g    = "#202225"
+p.dgrey.g    = "#707780"
+p.grey.g     = "#b8bcc8"
 
 p.magenta.g  = "#f08088"
 p.yellow.g   = "#d0a88c"

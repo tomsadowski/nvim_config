@@ -5,5 +5,6 @@
 
 ## Colorschemes
 
-## heart
-![heart](pics/heart.png)
+## fire
+![fire-rust](pics/fire-rust.png)
+![fire-python](pics/fire-python.png)
