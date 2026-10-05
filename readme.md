@@ -5,6 +5,5 @@
 
 ## Colorschemes
 
-## ball
-![ball-rust](pics/ball-rust.png)
-![ball-python](pics/ball-python.png)
+## heart
+![heart](pics/heart.png)
