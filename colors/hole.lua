@@ -1,4 +1,4 @@
--- ball
+-- heart
 
 require "treesitter"
 local c = require "color"
@@ -10,7 +10,7 @@ p.grey.g     = "#b8bcc8"
 
 p.magenta.g  = "#e08080"
 p.yellow.g   = "#caac98"
-p.cyan.g     = "#70b0a0"
+p.cyan.g     = "#78b0a0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
