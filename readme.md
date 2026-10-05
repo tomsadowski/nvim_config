@@ -7,5 +7,4 @@
 
 ## fire
 ![fire-rust](pics/fire-rust.png)
-![fire-rust-2](pics/fire-rust-2.png)
 ![fire-python](pics/fire-python.png)
