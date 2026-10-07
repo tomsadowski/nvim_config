@@ -5,6 +5,5 @@
 
 ## Colorschemes
 
-## fire
-![fire-rust](pics/fire-rust.png)
-![fire-python](pics/fire-python.png)
+## cyanfire
+![cyanfire-rust](pics/cyanfire-rust.png)
