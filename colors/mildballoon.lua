@@ -10,9 +10,9 @@ p.dblue.g    = "#2d2d30"
 p.dgrey.g    = "#787880"
 p.grey.g     = "#c4c4cc"
 
-p.magenta.g  = "#d87688"
+p.magenta.g  = "#e87488"
 p.yellow.g   = "#c8aca0"
-p.cyan.g     = "#80b0a4"
+p.cyan.g     = "#a0a8e0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
