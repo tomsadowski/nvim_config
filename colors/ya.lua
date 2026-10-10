@@ -1,22 +1,22 @@
--- 256balloon
+-- balloon
+-- ff d7 af 87 5f 00
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#262626"
-p.dblue.g    = "#303030"
-p.dgrey.g    = "#808080"
-p.grey.g     = "#c8c8c8"
+p.black.g    = "#242425"
+p.dblue.g    = "#2d2d30"
+p.dgrey.g    = "#787880"
+p.grey.g     = "#c4c4cc"
 
--- ff d7 af 87 5f 00
+p.red.g      = "#d87688"
+p.yellow.g   = "#c0aca0"
+p.cyan.g     = "#80b0a4"
+p.magenta.g  = "#c09cb0"
 
-p.magenta.g  = "#ff5f87"
-p.yellow.g   = "#d7af87"
-p.cyan.g     = "#afafff"
-
-p.dmagenta.g = "#5f005f"
-p.dyellow.g  = "#00005f"
+p.dmagenta.g = "#402c40"
+p.dyellow.g  = "#4a403c"
 
 c.apply {
   search     = p.dyellow, 
@@ -28,7 +28,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.magenta,
+  keyword    = p.red,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -47,7 +47,7 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.grey, 
+  type       = p.magenta, 
   btype      = p.grey, 
   constant   = p.yellow, 
 

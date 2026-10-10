@@ -10,9 +10,10 @@ p.dblue.g    = "#2d2d30"
 p.dgrey.g    = "#787880"
 p.grey.g     = "#c4c4cc"
 
-p.magenta.g  = "#d87688"
-p.yellow.g   = "#c8aca0"
+p.red.g      = "#d87688"
+p.yellow.g   = "#c0aca0"
 p.cyan.g     = "#80b0a4"
+p.magenta.g  = "#c09cb0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
@@ -27,7 +28,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.magenta,
+  keyword    = p.red,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -46,7 +47,7 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.grey, 
+  type       = p.magenta, 
   btype      = p.grey, 
   constant   = p.yellow, 
 
