@@ -87,7 +87,7 @@
 
 (identifier) @variable
 (attribute
-  (attribute) @trunk (#set! priority 104)
+  (attribute) @trunk (#set! priority 100)
 )
 
 (attribute
@@ -96,7 +96,7 @@
 
 
 ((identifier) @constant
- (#match? @constant "^[A-Z][A-Z_]*$"))
+ (#match? @constant "^[A-Z][A-Z_]*$") (#set! priority 101))
 
 
 (argument_list
@@ -127,7 +127,7 @@
   name: (identifier) @function)
 
 (attribute attribute: (identifier) @property)
-(type (identifier) @type (#set! priority 105))
+(type (identifier) @type (#set! priority 100))
 (call function: (attribute attribute: (identifier) @function.method) (#set! priority 105))
 
 
@@ -139,7 +139,7 @@
   "{" @punctuation.special
   "}" @punctuation.special) @embedded
 
-((identifier) @type (#match? @type "^[A-Z]") (#set! priority 105))
+((identifier) @type (#match? @type "^[A-Z]") (#set! priority 100))
 
 (dotted_name (identifier) @trunk (identifier))
 
@@ -154,7 +154,7 @@
   function: (attribute
     object: (attribute
       object: (identifier)
-      attribute: (identifier) @caller (#set! priority 105)
+      attribute: (identifier) @caller (#set! priority 101)
     )
     attribute: (identifier)
   )
@@ -163,7 +163,7 @@
 
 (call
   function: (attribute
-    object: (identifier) @caller (#set! priority 105)
+    object: (identifier) @caller (#set! priority 101)
   )
   arguments: (argument_list)
 )
