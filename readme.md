@@ -5,5 +5,5 @@
 
 ## Colorschemes
 
-## cyanfire
-![cyanfire-rust](pics/cyanfire-rust.png)
+## jojo
+![jojo](pics/jojo.png)
