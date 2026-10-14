@@ -15,7 +15,7 @@ vim.keymap.set({"n", "v"}, "e",       "h")     -- cursor left
 vim.keymap.set({"n", "v"}, "<Left>",  "h")      
 vim.keymap.set({"n", "v"}, "n",       "l")     -- cursor right
 vim.keymap.set({"n", "v"}, "<Right>", "l")      
-vim.keymap.set({"n", "v"}, "i",       "j")     -- cursor down
+vim.keymap.set({"n", "v"}, "i",       "j", {nowait = true})     -- cursor down
 vim.keymap.set({"n", "v"}, "<Down>",  "j")      
 vim.keymap.set({"n", "v"}, "o",       "k")     -- cursor up
 vim.keymap.set({"n", "v"}, "<Up>",    "k")      
