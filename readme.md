@@ -5,5 +5,5 @@
 
 ## Colorschemes
 
-## jojo
-![jojo](pics/jojo.png)
+## tata
+![tata](pics/tata.png)
