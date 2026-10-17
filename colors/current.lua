@@ -5,14 +5,14 @@ local c = require "color"
 local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#202022"
-p.dblue.g    = "#2d2d30"
-p.dgrey.g    = "#787a80"
-p.grey.g     = "#c4c6ca"
+p.dblue.g    = "#2c2c32"
+p.dgrey.g    = "#747680"
+p.grey.g     = "#b8c0c8"
 
-p.red.g      = "#d07484"
+p.red.g      = "#c08870"
 p.yellow.g   = "#bca79c"
-p.cyan.g     = "#80b0a4"
-p.magenta.g  = "#c0a8b8"
+p.cyan.g     = "#84aaa0"
+p.magenta.g  = "#b89cb0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
@@ -47,7 +47,7 @@ c.apply {
   item       = p.yellow, 
 
   type       = p.magenta, 
-  btype      = p.grey, 
+  btype      = p.magenta, 
   constant   = p.yellow, 
 
   literal    = p.cyan, 
