@@ -1,20 +1,21 @@
--- cyanfire
+-- tata
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#202225"
-p.dgrey.g    = "#707780"
-p.grey.g     = "#b8bcc8"
+p.black.g    = "#202022"
+p.dblue.g    = "#2d2d30"
+p.dgrey.g    = "#787a80"
+p.grey.g     = "#c4c6ca"
 
-p.magenta.g  = "#e08090"
-p.yellow.g   = "#ccb0a8"
-p.cyan.g     = "#80c0b0"
+p.red.g      = "#d07484"
+p.yellow.g   = "#bca69c"
+p.cyan.g     = "#80b0a4"
+p.magenta.g  = "#c0a0b0"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
-p.dblue.g    = "#2c323a"
 
 c.apply {
   search     = p.dyellow, 
@@ -26,7 +27,7 @@ c.apply {
   signcol    = p.dgrey, 
   lineno     = p.dgrey, 
 
-  keyword    = p.magenta,
+  keyword    = p.red,
 
   msgarea    = p.grey, 
   normal     = p.grey, 
@@ -45,7 +46,7 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.grey, 
+  type       = p.magenta, 
   btype      = p.grey, 
   constant   = p.yellow, 
 

@@ -1,22 +1,21 @@
--- balloon
--- ff d7 af 87 5f 00
+-- day
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#1f1f20"
-p.dblue.g    = "#2d2d30"
+p.black.g    = "#b6c0c8"
+p.dblue.g    = "#a0c0ff"
 p.dgrey.g    = "#787a80"
-p.grey.g     = "#c4c6ca"
+p.grey.g     = "#000000"
 
-p.red.g      = "#d87484"
-p.yellow.g   = "#c8b0a0"
-p.cyan.g     = "#80b0a4"
-p.magenta.g  = "#c8a0b4"
+p.red.g      = "#a02000"
+p.yellow.g   = "#0030c0"
+p.cyan.g     = "#307000"
+p.magenta.g  = "#902090"
 
-p.dmagenta.g = "#402c40"
-p.dyellow.g  = "#4a403c"
+p.dmagenta.g = "#f0b0f0"
+p.dyellow.g  = "#f0e0a0"
 
 c.apply {
   search     = p.dyellow, 
