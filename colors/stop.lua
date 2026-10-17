@@ -1,18 +1,18 @@
--- tata
+-- stop
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#1f1f20"
+p.black.g    = "#202022"
 p.dblue.g    = "#2d2d30"
 p.dgrey.g    = "#787a80"
 p.grey.g     = "#c4c6ca"
 
-p.red.g      = "#d87484"
-p.yellow.g   = "#bca89c"
+p.red.g      = "#d07484"
+p.yellow.g   = "#bca79c"
 p.cyan.g     = "#80b0a4"
-p.magenta.g  = "#c0a0b0"
+p.magenta.g  = "#c0a8b8"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"

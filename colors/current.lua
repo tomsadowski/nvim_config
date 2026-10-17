@@ -1,21 +1,21 @@
--- day
+-- stop
 
 require "treesitter"
 local c = require "color"
 local p = vim.deepcopy(c.palette)
 
-p.black.g    = "#b6c0c8"
-p.dblue.g    = "#a0c0ff"
+p.black.g    = "#202022"
+p.dblue.g    = "#2d2d30"
 p.dgrey.g    = "#787a80"
-p.grey.g     = "#000000"
+p.grey.g     = "#c4c6ca"
 
-p.red.g      = "#a02000"
-p.yellow.g   = "#0030c0"
-p.cyan.g     = "#307000"
-p.magenta.g  = "#902090"
+p.red.g      = "#d07484"
+p.yellow.g   = "#bca79c"
+p.cyan.g     = "#80b0a4"
+p.magenta.g  = "#c0a8b8"
 
-p.dmagenta.g = "#f0b0f0"
-p.dyellow.g  = "#f0e0a0"
+p.dmagenta.g = "#402c40"
+p.dyellow.g  = "#4a403c"
 
 c.apply {
   search     = p.dyellow, 
