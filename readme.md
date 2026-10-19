@@ -5,5 +5,5 @@
 
 ## Colorschemes
 
-## tata
-![tata](pics/tata.png)
+## ya
+![ya](pics/ya.png)
