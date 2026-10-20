@@ -17,7 +17,7 @@ p.magenta.g  = "#b89cb0"
 -- comment test
 -- comment test
 -- comment test
-p.blue.g     = "#7880a0"
+p.blue.g     = "#707890"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
