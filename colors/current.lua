@@ -17,7 +17,7 @@ p.magenta.g  = "#b89cb0"
 -- comment test
 -- comment test
 -- comment test
-p.blue.g     = "#707890"
+p.blue.g     = "#707688"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
@@ -29,8 +29,8 @@ c.apply {
 
   canvas     = p.black, 
 
-  signcol    = p.dgrey, 
-  lineno     = p.dgrey, 
+  signcol    = p.blue, 
+  lineno     = p.blue, 
 
   keyword    = p.red,
 
