@@ -12,7 +12,7 @@ p.grey.g     = "#bcbcc8"
 p.red.g      = "#c08272"
 p.yellow.g   = "#bca79c"
 p.cyan.g     = "#84aaa0"
-p.magenta.g  = "#b094a8"
+p.magenta.g  = "#a892a8"
 -- comment test
 -- comment test
 -- comment test

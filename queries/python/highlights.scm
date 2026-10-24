@@ -111,7 +111,7 @@
   (identifier) @function (#set! priority 105))
 
 (call
-  function: (identifier) @function (#set! priority 105))
+  function: (identifier) @function (#set! priority 100))
 
 ; Builtin functions
 
@@ -128,7 +128,7 @@
 
 (attribute attribute: (identifier) @property)
 (type (identifier) @type (#set! priority 100))
-(call function: (attribute attribute: (identifier) @function.method) (#set! priority 105))
+(call function: (attribute attribute: (identifier) @function.method) (#set! priority 100))
 
 
 (comment) @comment
