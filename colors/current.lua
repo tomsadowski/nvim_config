@@ -14,7 +14,7 @@ p.yellow.g   = "#baa79c"
 p.cyan.g     = "#84aaa0"
 p.magenta.g  = "#bc9abc"
 
-p.dmagenta.g = "#402c40"
+p.dmagenta.g = "#342034"
 p.dyellow.g  = "#4a403c"
 
 c.apply {
