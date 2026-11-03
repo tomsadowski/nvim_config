@@ -86,3 +86,14 @@ vim.api.nvim_create_autocmd(
     end
   }
 )
+
+vim.api.nvim_create_autocmd(
+  'FileType', 
+  {
+    pattern = { 'sql' },
+    callback = function() 
+      vim.treesitter.start() 
+    end,
+  }
+)
+vim.treesitter.language.register('bash', 'sh')
