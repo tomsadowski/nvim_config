@@ -5,5 +5,7 @@
 
 ## Colorschemes
 
-## ya
+### fire
+![fire](pics/fire.png)
+### ya
 ![ya](pics/ya.png)

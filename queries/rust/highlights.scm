@@ -493,14 +493,14 @@ function: (field_expression
 ; )
 
 function: (scoped_identifier 
-  path: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+  path: (identifier) @type ;(#match? @type "^[A-Z][a-zA-Z0-9]*$")
   name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
 )
 
 function: (scoped_identifier 
   path: (scoped_identifier
       path: (scoped_identifier)
-      name: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+      name: (identifier) @type ;(#match? @type "^[A-Z][a-zA-Z0-9]*$")
     ) 
   name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
 )
@@ -508,7 +508,7 @@ function: (scoped_identifier
 function: (scoped_identifier 
   path: (scoped_identifier
       path: (identifier)
-      name: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+      name: (identifier) @type ;(#match? @type "^[A-Z][a-zA-Z0-9]*$")
     ) 
   name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
 )
