@@ -6,13 +6,13 @@ local p = vim.deepcopy(c.palette)
 
 p.black.g    = "#202022"
 p.dblue.g    = "#2a2c32"
-p.grey.g     = "#bcbcc8"
+p.dgrey.g    = "#707688"
+p.white.g    = "#bcbcc8"
 
 p.red.g      = "#c08272"
 p.yellow.g   = "#baa79c"
 p.cyan.g     = "#84aaa0"
-p.magenta.g  = "#b292b4"
-p.blue.g     = "#707688"
+p.magenta.g  = "#b294b4"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
@@ -24,21 +24,21 @@ c.apply {
 
   canvas     = p.black, 
 
-  signcol    = p.blue, 
-  lineno     = p.blue, 
+  signcol    = p.dgrey, 
+  lineno     = p.dgrey, 
 
   keyword    = p.red,
 
-  msgarea    = p.grey, 
-  normal     = p.grey, 
-  curlineno  = p.grey, 
+  msgarea    = p.white, 
+  normal     = p.white, 
+  curlineno  = p.white, 
 
-  comment    = p.blue, 
+  comment    = p.dgrey, 
 
-  path       = p.grey, 
-  trunk      = p.grey,
+  path       = p.white, 
+  trunk      = p.white,
   caller     = p.yellow,
-  func       = p.grey, 
+  func       = p.white, 
   memberdecl = p.yellow, 
   import     = p.yellow,
   variant    = p.yellow, 
