@@ -485,3 +485,30 @@ function: (field_expression
 (macro_invocation "!" @function)
 (closure_parameters (_) @variable.parameter)
 (parameter "_" @variable.parameter.builtin)
+
+; (generic_function 
+;   (scoped_identifier 
+;     path: (identifier) @type
+;   )
+; )
+
+function: (scoped_identifier 
+  path: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+  name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
+)
+
+function: (scoped_identifier 
+  path: (scoped_identifier
+      path: (scoped_identifier)
+      name: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+    ) 
+  name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
+)
+
+function: (scoped_identifier 
+  path: (scoped_identifier
+      path: (identifier)
+      name: (identifier) @type (#match? @type "^[A-Z][a-zA-Z0-9]*$")
+    ) 
+  name: (identifier) @function (#match? @function "^[a-z][a-z0-9_]*$")
+)
