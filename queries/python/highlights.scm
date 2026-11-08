@@ -96,7 +96,7 @@
 
 
 ((identifier) @constant
- (#match? @constant "^[A-Z][A-Z_]*$") (#set! priority 101))
+ (#match? @constant "^[A-Z][A-Z0-9_]*$") (#set! priority 101))
 
 
 (argument_list
@@ -139,7 +139,7 @@
   "{" @punctuation.special
   "}" @punctuation.special) @embedded
 
-((identifier) @type (#match? @type "^[A-Z]") (#set! priority 100))
+((identifier) @type (#match? @type "^[A-Z][A-Za-z0-9_]*$") (#set! priority 100))
 
 (dotted_name (identifier) @trunk (identifier))
 
