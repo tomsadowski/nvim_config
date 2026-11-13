@@ -5,8 +5,8 @@
 
 ## Colorschemes
 
-### ya
-![ya](pics/ya.png)
+### beachgrass
+![beachgrass](pics/beachgrass.png)
 
 ### fire
 ![fire](pics/fire.png)
