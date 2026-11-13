@@ -7,6 +7,4 @@
 
 ### land
 ![land](pics/land.png)
-
-### fire
-![fire](pics/fire.png)
+![land2](pics/land2.png)
