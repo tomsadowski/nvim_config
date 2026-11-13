@@ -5,8 +5,8 @@
 
 ## Colorschemes
 
-### beachgrass
-![beachgrass](pics/beachgrass.png)
+### land
+![land](pics/land.png)
 
 ### fire
 ![fire](pics/fire.png)
