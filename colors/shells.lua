@@ -1,4 +1,4 @@
--- beachgrass
+-- land
 
 require "treesitter"
 local c = require "color"
@@ -9,9 +9,9 @@ p.dblue.g    = "#2a2c32"
 p.dgrey.g    = "#727688"
 p.white.g    = "#bcbcc8"
 
-p.red.g      = "#d06c68"
-p.yellow.g   = "#bca798"
-p.green.g    = "#a0b072"
+p.red.g      = "#cc6c68"
+p.yellow.g   = "#c0a798"
+p.magenta.g  = "#c090bc"
 p.cyan.g     = "#70a898"
 
 p.dmagenta.g = "#402c40"
@@ -46,8 +46,8 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.green, 
-  btype      = p.green, 
+  type       = p.magenta, 
+  btype      = p.magenta, 
   constant   = p.yellow, 
 
   literal    = p.cyan, 
