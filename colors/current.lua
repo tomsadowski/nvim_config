@@ -11,8 +11,8 @@ p.white.g    = "#bcbcc8"
 
 p.red.g      = "#cc6c68"
 p.yellow.g   = "#c0a798"
-p.magenta.g  = "#c088b8"
-p.cyan.g     = "#70a898"
+p.green.g    = "#88a870"
+p.cyan.g     = "#a090cc"
 
 p.dmagenta.g = "#402c40"
 p.dyellow.g  = "#4a403c"
@@ -46,8 +46,8 @@ c.apply {
   typeparam  = p.yellow,
   item       = p.yellow, 
 
-  type       = p.magenta, 
-  btype      = p.magenta, 
+  type       = p.green, 
+  btype      = p.green, 
   constant   = p.yellow, 
 
   literal    = p.cyan, 
