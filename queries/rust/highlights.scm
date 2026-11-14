@@ -133,7 +133,7 @@
 (function_signature_item      (identifier) @function)
 (match_arm                    (identifier) @variable)
 (block                        (identifier) @variable)
-(lifetime                     (identifier) @variable)
+(lifetime                     (identifier) @type)
 (scoped_type_identifier path: (identifier) @path)
 (enum_variant           name: (identifier) @variant)
 (scoped_identifier path: (identifier) @path)
